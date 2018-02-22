@@ -1,0 +1,24 @@
+// New gamevars for door
+
+action ZERO 0
+
+gamevar doortime 0 2
+gamevar glob_doortime 0 1
+gamevar doorindex 0 2
+gamevar LOTAGSAVED 0 2
+gamevar HITAGSAVED 0 2
+gamevar newkeys 0 1
+gamevar gid 0 2
+gamevar mz 0 2
+gamevar temp 0 2
+gamevar TEMP 0 2
+gamevar TEMP9 0 2
+
+gamevar MIDICHANGES -1 0
+gamevar EXTRASAVED 0 2
+gamevar XVELSAVED 0 2
+gamevar YVELSAVED 0 2
+gamevar ZVELSAVED 0 2
+
+gamevar player_use 26 1
+

@@ -1,8 +1,47 @@
 
+// New States For Door vvvvvvvvvvvvvvvvv
+
+defstate GETALLTAGS
+{
+    getactor[THISACTOR].hitag HITAGSAVED
+    getactor[THISACTOR].lotag LOTAGSAVED
+    getactor[THISACTOR].extra EXTRASAVED
+    getactor[THISACTOR].xvel XVELSAVED
+    getactor[THISACTOR].yvel YVELSAVED
+    getactor[THISACTOR].zvel ZVELSAVED
+    setactor[THISACTOR].hitag 0
+    setactor[THISACTOR].lotag 0
+    setactor[THISACTOR].extra 0
+    setactor[THISACTOR].xvel 0
+    setactor[THISACTOR].yvel 0
+    setactor[THISACTOR].zvel 0
+}
+ends
+
+defstate loadactortags
+   getactor[THISACTOR].hitag HITAGSAVED
+   getactor[THISACTOR].lotag LOTAGSAVED
+   setactor[THISACTOR].hitag 0
+   setactor[THISACTOR].lotag 0 
+ends
+
+defstate GETHITAGLOTAG
+{
+    getactor[THISACTOR].hitag HITAGSAVED
+    getactor[THISACTOR].lotag LOTAGSAVED
+    setactor[THISACTOR].hitag 0
+    setactor[THISACTOR].lotag 0
+}
+ends
+
+// New States For Door ^^^^^^^^^^^^^^^^^
+
+
+// Door Code vvvvvvvvvvvvvvvvv
 
 define TELEPORTDOOR 5632
 
-state doorfind
+defstate doorfind
    setvar gid 0
      whilevarn gid 16384
    {
@@ -77,3 +116,7 @@ actor TELEPORTDOOR
 enda
 
 eventloadactor TELEPORTDOOR  state loadactortags  enda
+
+// Door Code ^^^^^^^^^^^^^^^^^
+
+

@@ -1,7 +1,7 @@
 define MUSICCHANGE 5633
 
 
-state state_MIDICHANGES
+defstate state_MIDICHANGES
     getplayer[THISACTOR].player_par TEMP
         ifvarvarl totalclock TEMP
 	
@@ -47,3 +47,4 @@ else
 	}
 
 enda
+

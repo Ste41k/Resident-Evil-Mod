@@ -1,6 +1,6 @@
 
-//Global File For gamevars
-include ResidentEvil_Data\cons\gamevars.con
+//Use this file to set up generic states and gamevars that can be used by multiple cons lower in the load order
+include ResidentEvil_Data\cons\BetaCode-GenericCode-LoadOrder.con
 //===================================================================================================================
 
 //Menu Positioning code. ( STE41k self-note, taken from fox's Duke 64 mod )
@@ -24,12 +24,20 @@ include ResidentEvil_Data\cons\DEFS-Quotes.con
 include ResidentEvil_Data\cons\USER.con
 //===================================================================================================================
 
-include ResidentEvil_Data\cons\Doors.con
+include ResidentEvil_Data\cons\GenericEffects\Doors.con
+
 include ResidentEvil_Data\cons\Music.con
 
 include ResidentEvil_Data\cons\GAME.con
 
 include ResidentEvil_Data\cons\Player-Code.con
+
+
+
+
+
+
+
 
 
 

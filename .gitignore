@@ -7,3 +7,6 @@
 *.cache
 *.db
 Resident Evil Outbreak/textures
+Resident Evil Outbreak/autosave.map
+Resident Evil Outbreak/autosave_playtest.map
+Resident Evil Outbreak/backup.map

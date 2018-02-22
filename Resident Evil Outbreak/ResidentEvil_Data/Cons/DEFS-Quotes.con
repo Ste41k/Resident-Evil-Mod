@@ -1,136 +1,71 @@
-// Maximum quote size is 64 characters.
-// Maximum quotes is 192 slots.
 
 
-definequote  0        AUTO AIMING
-definequote  1        SHOW MAP: OFF
-definequote  2        ACTIVATED
-definequote  3        PORTABLE MEDKIT
-definequote  4        LOCKED
-definequote  5        GIVING EVERYTHING!
-definequote  6        BOOTS
-definequote  7        WASTED!
-definequote  8        UNLOCKED
-definequote  9        A SECRET PLACE!
-definequote 10        SQUISH!
-definequote 11        ALL DOORS UNLOCKED
-definequote 12        USED STEROIDS
-definequote 13        PRESS SPACE TO RESTART LEVEL
-definequote 14        AMMO FOR DEVASTATOR
-definequote 15        DEACTIVATED
-definequote 16        SWITCH OPERATED ONLY!
-definequote 17        GOD MODE: ON
-definequote 18        GOD MODE: OFF
-definequote 19        ATOMIC HEALTH!
-definequote 20        CROSSHAIR: ON
-definequote 21        CROSSHAIR: OFF
-definequote 22        YOU'RE TOO GOOD TO BE CHEATING!
-definequote 23        MESSAGES: ON
-definequote 24        MESSAGES: OFF
-definequote 25        TYPE THE CHEAT CODE:
-definequote 26        DETAIL: LOW
-definequote 27        DETAIL: HIGH
-definequote 28        WILL ALWAYS HAVE NO FUTURE
-definequote 29        BRIGHTNESS LEVEL: ONE
-definequote 30        BRIGHTNESS LEVEL: TWO
-definequote 31        BRIGHTNESS LEVEL: THREE
-definequote 32        BRIGHTNESS LEVEL: FOUR
-definequote 33        BRIGHTNESS LEVEL: FIVE
-definequote 34        SOUND: ON
-definequote 35        SOUND: OFF
-definequote 36        SCREEN CAPTURED
-definequote 37        STEROIDS
-definequote 38        ARMOR
-definequote 39        SCUBA GEAR
-definequote 40        Press F1 for Help
-definequote 41        JETPACK
-definequote 42        BODY SUIT
-definequote 43        ACCESS CARD
-definequote 44        MOUSE AIMING OFF
-definequote 45        MOUSE AIMING ON
-definequote 46        CHEAT CODE:  UNRECOGNIZED
-definequote 47        HOLODUKE ON
-definequote 48        HOLODUKE OFF
-definequote 49        HOLODUKE NOT FOUND YET!
-definequote 50        JETPACK NOT FOUND YET!
-definequote 51        HOLODUKE
-definequote 52        JETPACK ON
-definequote 53        JETPACK OFF
-definequote 54        CHAINGUN CANNON!
-definequote 55        PIPEBOMB!
-definequote 56        RPG!
-definequote 57        SHOTGUN
-definequote 58        LASER TRIPBOMB!
-definequote 59        FREEZETHROWER!
-definequote 60        GOT SHRINKER/EXPANDER!
-definequote 61        SMALL MEDKIT: +10
-definequote 62        LARGE MEDKIT: +30
-definequote 63        AMMO FOR CHAINGUN CANNON!
-definequote 64        AMMO FOR RPG!
-definequote 65        AMMO FOR PISTOL!
-definequote 66        AMMO FOR FREEZETHROWER!
-definequote 67        BOOTS OFF
-definequote 68        BOOTS ON
-definequote 69        AMMO FOR SHOTGUN
-definequote 70        BLUE ACCESS CARD REQUIRED
-definequote 71        RED ACCESS CARD REQUIRED
-definequote 72        YELLOW ACCESS CARD REQUIRED
-definequote 73        WEAPON LOWERED
-definequote 74        WEAPON RAISED
-definequote 75        PROTECTIVE BOOTS ON
-definequote 76        SCUBA GEAR ON
-definequote 77        SPACE SUIT ON
-definequote 78        AMMO FOR SHRINKER
-definequote 79        BUY MAJOR STRYKER
-definequote 80        MIGHTY FOOT ENGAGED
-definequote 81        WEAPON MODE ON
-definequote 82        WEAPON MODE OFF
-definequote 83        FOLLOW MODE OFF
-definequote 84        FOLLOW MODE ON
-definequote 85        RUN MODE OFF
-definequote 86        RUN MODE ON
-definequote 87        DEVASTATOR WEAPON
-definequote 88        JET PACK
-definequote 89        AIRTANK
-definequote 90        STEROIDS
-definequote 91        HOLODUKE
-definequote 92        MUSIC: ON
-definequote 93        MUSIC: OFF
-definequote 94        SCROLL MODE: ON
-definequote 95        SCROLL MODE: OFF
-definequote 96        BRIGHTNESS LEVEL: SIX
-definequote 97        BRIGHTNESS LEVEL: SEVEN
-definequote 98        BRIGHTNESS LEVEL: EIGHT
-definequote 99        REGISTER COSMO TODAY!
-definequote 100       ALL LOCKS TOGGLED
-definequote 101       NIGHT VISION GOGGLES
-definequote 102       WE'RE GONNA FRY YOUR ASS, NUKEM!
-definequote 103       SCREEN SAVED
-definequote 104       GOT USED ARMOR
-definequote 105       PIRATES SUCK!
-definequote 106       NIGHT VISION ON
-definequote 107       NIGHT VISION OFF
-definequote 108       YOU'RE BURNING!  
-definequote 109       VIEW MODE OFF
-definequote 110       VIEW MODE ON
-definequote 111       SHOW MAP: ON
-definequote 112       CLIPPING: ON
-definequote 113       CLIPPING: OFF
-definequote 114       !!! INCORRECT VERSION !!!
-definequote 115       <Please Leave Blank>
-definequote 116       <Please Leave Blank>
-definequote 117       <Please Leave Blank>
-definequote 118       YOU CANNOT "QUICK SAVE" WHEN DEAD
-definequote 119       GOT ALL WEAPONS/AMMO
-definequote 120       GOT ALL INVENTORY
-definequote 121       GOT ALL KEYS
-//definequote 122       <Please Leave Blank>
-definequote 123       AMMO FOR EXPANDER
-definequote 124       MAP HAS A DIFFERENT NUMBER OF PLAYERS
+//All HardCoded Quotes
 
+definequote 0 AUTO AIMING
 
-
-
-
-
-
+definequote 1 QUOTE_SHOW_MAP_OFF         
+definequote 2 QUOTE_ACTIVATED            
+definequote 3 QUOTE_MEDKIT               
+definequote 4 QUOTE_LOCKED               
+definequote 5 QUOTE_CHEAT_EVERYTHING     
+definequote 6 QUOTE_BOOTS                
+definequote 7 QUOTE_WASTED               
+definequote 8 QUOTE_UNLOCKED             
+definequote 9 QUOTE_FOUND_SECRET         
+definequote 10 QUOTE_SQUISHED             
+definequote 12 QUOTE_USED_STEROIDS        
+definequote 13 QUOTE_DEAD                 
+definequote 15 QUOTE_DEACTIVATED          
+definequote 17 QUOTE_CHEAT_GODMODE_ON     
+definequote 18 QUOTE_CHEAT_GODMODE_OFF    
+definequote 21 QUOTE_CROSSHAIR_OFF        
+definequote 22 QUOTE_CHEATS_DISABLED      
+definequote 23 QUOTE_MESSAGES_ON          
+definequote 24 QUOTE_MESSAGES_OFF         
+definequote 26 QUOTE_MUSIC                
+definequote 37 QUOTE_CHEAT_STEROIDS       
+definequote 40 QUOTE_F1HELP               
+definequote 44 QUOTE_MOUSE_AIMING_OFF     
+definequote 47 QUOTE_HOLODUKE_ON          
+definequote 48 QUOTE_HOLODUKE_OFF         
+definequote 49 QUOTE_HOLODUKE_NOT_FOUND   
+definequote 50 QUOTE_JETPACK_NOT_FOUND    
+definequote 52 QUOTE_JETPACK_ON           
+definequote 53 QUOTE_JETPACK_OFF          
+definequote 70 QUOTE_NEED_BLUE_KEY        
+definequote 71 QUOTE_NEED_RED_KEY         
+definequote 72 QUOTE_NEED_YELLOW_KEY      
+definequote 73 QUOTE_WEAPON_LOWERED       
+definequote 74 QUOTE_WEAPON_RAISED        
+definequote 75 QUOTE_BOOTS_ON             
+definequote 76 QUOTE_SCUBA_ON             
+definequote 79 QUOTE_CHEAT_ALLEN          
+definequote 80 QUOTE_MIGHTY_FOOT          
+definequote 82 QUOTE_WEAPON_MODE_OFF      
+definequote 83 QUOTE_MAP_FOLLOW_OFF       
+definequote 85 QUOTE_RUN_MODE_OFF         
+definequote 88 QUOTE_JETPACK              
+definequote 89 QUOTE_SCUBA                
+definequote 90 QUOTE_STEROIDS             
+definequote 91 QUOTE_HOLODUKE             
+definequote 99 QUOTE_CHEAT_TODD           
+definequote 100 QUOTE_CHEAT_UNLOCK         
+definequote 101 QUOTE_NVG                  
+definequote 102 QUOTE_WEREGONNAFRYYOURASS  
+definequote 103 QUOTE_SCREEN_SAVED         
+definequote 105 QUOTE_CHEAT_BETA           
+definequote 107 QUOTE_NVG_OFF              
+definequote 109 QUOTE_VIEW_MODE_OFF        
+definequote 111 QUOTE_SHOW_MAP_ON          
+definequote 113 QUOTE_CHEAT_NOCLIP         
+definequote 114 QUOTE_SAVE_BAD_VERSION     
+definequote 115 QUOTE_RESERVED             
+definequote 116 QUOTE_RESERVED2            
+definequote 117 QUOTE_RESERVED3            
+definequote 118 QUOTE_SAVE_DEAD            
+definequote 119 QUOTE_CHEAT_ALL_WEAPONS    
+definequote 120 QUOTE_CHEAT_ALL_INV        
+definequote 121 QUOTE_CHEAT_ALL_KEYS       
+definequote 122 QUOTE_RESERVED4            
+definequote 124 QUOTE_SAVE_BAD_PLAYERS  

@@ -1,0 +1,69 @@
+
+// water_tower
+model "ResidentEvil_Data/gfx/models/water_tower/water_tower.md3"
+{
+  scale 1.0 shade 11
+  skin { pal 0 file "ResidentEvil_Data/gfx/models/water_tower/a.JPG" }
+  skin { pal 0 surface 1 file "ResidentEvil_Data/gfx/models/water_tower/b.JPG" }
+
+  anim { frame0 "idle01" frame1 "idle01" fps 0 flags 0 }
+  frame { name "idle01" tile0 6254 tile1 6254 }
+}
+
+// eagle_statue
+model "ResidentEvil_Data/gfx/models/eagle_statue/eagle_statue.md3"
+{
+scale 1.0 shade 11
+skin { pal 0 file "ResidentEvil_Data/gfx/models/eagle_statue/eagle_statue.JPG" }
+
+anim { frame0 "idle01" frame1 "idle01" fps 0 flags 0 }
+frame { name "idle01" tile0 6336 tile1 6336 }
+}
+
+//			// koepel
+//			model "ResidentEvil_Data/gfx/models/koepel/koepel.md3"
+//			{
+//			scale 0.5 shade 11
+//			skin { pal 0 file "ResidentEvil_Data/gfx/models/koepel/a.JPG" }
+//			skin { pal 0 surface 1 file "ResidentEvil_Data/gfx/models/koepel/b.JPG" }
+//			
+//			anim { frame0 "idle01" frame1 "idle01" fps 0 flags 0 }
+//			frame { name "idle01" tile0 6340 tile1 6340 }
+//			}
+//			
+//			// inside_bench
+//			model "ResidentEvil_Data/gfx/models/inside_bench/inside_bench.md3"
+//			{
+//			scale 1.0 shade 01
+//			skin { pal 0 file "ResidentEvil_Data/gfx/models/inside_bench/inside_bench.JPG" }
+//			
+//			anim { frame0 "idle01" frame1 "idle01" fps 0 flags 0 }
+//			frame { name "idle01" tile0 5829 tile1 5829 }
+//			}
+//			
+//			
+//			
+//			
+//			// black_hawk_umbrella
+//			model "ResidentEvil_Data/gfx/models/black_hawk_umbrella/black_hawk_umbrella.md3"
+//			{
+//			scale 1.0 shade 11
+//			skin { pal 0 file "ResidentEvil_Data/gfx/models/black_hawk_umbrella/black_hawk_umbrella.JPG" }
+//			
+//			anim { frame0 "idle01" frame1 "idle02" fps 30 flags 0 }
+//			frame { name "idle01" tile0 6380 tile1 6380 }
+//			}
+//			
+//			
+
+
+
+
+
+
+
+
+
+
+
+

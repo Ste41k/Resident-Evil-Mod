@@ -1,0 +1,28 @@
+
+
+//setgamename
+
+setgamename Resident Evil Outbreak
+
+
+
+// Volume titles cannot excede 32 characters.
+
+definevolumename 0 Raccoon City
+
+
+
+// Skill titles cannot excede 32 characters.
+
+defineskillname 0 Easy
+defineskillname 1 Normal
+defineskillname 2 Hard
+defineskillname 3 Expert
+
+
+// Level file names cannot excede 128 characters.
+// Level par cannot excede 5 characters (min:sec)
+// Level titles cannot excede 32 characters.
+
+definelevelname 0 0 ResidentEvil_Data\maps\Resident180.map 00:00 00:00 Raccoon City Streets
+

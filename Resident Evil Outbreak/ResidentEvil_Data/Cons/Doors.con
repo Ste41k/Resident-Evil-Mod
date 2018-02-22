@@ -1,0 +1,79 @@
+
+
+define TELEPORTDOOR 5632
+
+state doorfind
+   setvar gid 0
+     whilevarn gid 16384
+   {
+     ifvarvarn gid THISACTOR
+     ifvare sprite[gid].picnum TELEPORTDOOR
+     ifvarvare actorvar[gid].LOTAGSAVED LOTAGSAVED
+       setvarvar doorindex gid
+         addvar gid 1 
+   }
+ends
+
+actor TELEPORTDOOR
+ cstat 32768
+ ifvarn doortime 0
+  { addvar doortime 1
+    setplayer[THISACTOR].movement_lock 15
+    setvarvar glob_doortime doortime }
+ else
+  { setplayer[THISACTOR].movement_lock 0
+    setvar glob_doortime 0 }
+
+ ifpdistl 768 ifcansee ifp palive ifp pfacing
+  ifhitspace ifvare glob_doortime 0
+  { setvar temp 0
+    ifvarn HITAGSAVED 0
+     { ifvarvarand newkeys HITAGSAVED setvar temp 127 else setvar temp 0 }
+     else setvar temp 127
+   ifvare temp 127
+   { setvar doortime 1
+     lockplayer 35
+     stopsound DUKE_SEARCH
+     stopsound DUKE_SEARCH2
+     globalsound DOORSND }
+    else
+   { quote 155
+     stopsound DUKE_SEARCH
+     stopsound DUKE_SEARCH2 }
+  }
+
+ switch doortime 
+  case 1  case -1  palfrom 3 0  state doorfind break
+  case 2  case -2  palfrom 6 0  break
+  case 3  case -3  palfrom 9 0  break
+  case 4  case -4  palfrom 12 0  break
+  case 5  case -5  palfrom 15 0  break
+  case 6  case -6  palfrom 18 0  break
+  case 7  case -7  palfrom 21 0  break
+  case 8  case -8  palfrom 24 0  break
+  case 9  case -9  palfrom 27 0  break
+  case 10  case -10  palfrom 30 0  break
+  case 11  case -11  palfrom 33 0  break
+  case 12  case -12  palfrom 36 0  break
+  case 13  case -13  palfrom 39 0  break
+  case 14  case -14  palfrom 42 0  break
+  case 15  case -15  palfrom 45 0  break
+  case 16  case -16  palfrom 48 0  break
+  case 17  case -17  palfrom 52 0  break
+  case 18  case -18  palfrom 58 0  break
+  case 19  case -19  palfrom 62 0  break
+  case 20 
+    setplayer[THISACTOR].posx sprite[doorindex].x
+    setplayer[THISACTOR].posy sprite[doorindex].y
+    getactor[doorindex].z mz  subvar mz 8192
+     setplayer[THISACTOR].posz mz
+    setplayer[THISACTOR].cursectnum sprite[doorindex].sectnum
+    setplayer[THISACTOR].ang  sprite[doorindex].ang
+    palfrom 64 0
+    setvar doortime -20
+   break
+ endswitch
+
+enda
+
+eventloadactor TELEPORTDOOR  state loadactortags  enda

@@ -1,0 +1,53 @@
+
+
+//animsounds <anim> { frame1 sound1 frame2 sound2 ... }
+
+
+//Disables all intros
+gamevar LOGO_FLAGS 0
+
+
+
+
+var V_TEMP1                             0
+var V_TEMP2                             0
+
+define D_SCREEN_HEIGHT                  240
+define MENU_MAIN                        0
+define MENU_MAIN_INGAME                 50
+
+
+
+state S_menupos
+  switch RETURN
+  case MENU_MAIN
+  case MENU_MAIN_INGAME
+    set V_TEMP1 userdef[].m_origin_y
+    ife RETURN MENU_MAIN_INGAME
+      set V_TEMP2 40
+    else
+      set V_TEMP2 45
+    shiftl V_TEMP2 16
+    add V_TEMP1 V_TEMP2
+    set V_TEMP2 D_SCREEN_HEIGHT
+    sub V_TEMP2 200
+    shiftl V_TEMP2 15
+    sub V_TEMP1 V_TEMP2
+    setuserdef[].m_origin_y V_TEMP1
+  break
+  endswitch
+ends
+
+appendevent EVENT_DISPLAYMENU
+  state S_menupos
+endevent
+
+appendevent EVENT_DISPLAYINACTIVEMENU
+  state S_menupos
+endevent
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+
+
+
+
+
+include ResidentEvil_Data/Defs/Art.def
+include ResidentEvil_Data/Defs/Skybox.def
+include ResidentEvil_Data/Defs/Models.def
+include ResidentEvil_Data/Defs/Menu.def
+
+
+
+
+include ResidentEvil_Data/Defs/Weapons.def
+
+
+
+
+

@@ -1,0 +1,278 @@
+//This file will likely be dissected over time and be parted out to files for each specific use.
+
+
+
+// Defines weapon, not to be used with the 'shoot' keyword.
+
+define KNEE_WEAPON         0
+define PISTOL_WEAPON       1
+define SHOTGUN_WEAPON      2
+define CHAINGUN_WEAPON     3
+define RPG_WEAPON          4
+define HANDBOMB_WEAPON     5
+define SHRINKER_WEAPON     6
+define DEVISTATOR_WEAPON   7
+define TRIPBOMB_WEAPON     8
+define FREEZE_WEAPON       9
+define HANDREMOTE_WEAPON   10
+define GROW_WEAPON         11
+
+// Defines the motion characteristics of an actor
+define faceplayer 1
+define geth 2
+define getv 4
+define randomangle 8
+define faceplayerslow 16
+define spin 32
+define faceplayersmart 64
+define fleeenemy 128
+define jumptoplayer 257
+define seekplayer 512
+define furthestdir 1024
+define dodgebullet 4096
+
+// Some misc defines
+define NO       0
+define YES      1
+
+// Defines for 'useractor' keyword
+define notenemy       0
+define enemy          1
+define enemystayput   2
+
+// Player Actions.
+define pstanding 1
+define pwalking 2
+define prunning 4
+define pducking 8
+define pfalling 16
+define pjumping 32
+define phigher 64
+define pwalkingback 128
+define prunningback 256
+define pkicking 512
+define pshrunk 1024
+define pjetpack 2048
+define ponsteroids 4096
+define ponground 8192
+define palive 16384
+define pdead 32768
+define pfacing 65536
+
+
+define GET_STEROIDS     0
+define GET_SHIELD       1
+define GET_SCUBA        2
+define GET_HOLODUKE     3
+define GET_JETPACK      4
+define GET_ACCESS       6
+define GET_HEATS        7
+define GET_FIRSTAID     9
+define GET_BOOTS       10
+
+
+
+
+
+
+
+
+// ******************
+// MISC GAME SETTINGS
+// ******************
+
+define SWEARFREQUENCY          100      // The lower, the less.
+
+define CAMERASDESTRUCTABLE      NO               // YES
+define FREEZERHURTOWNER         YES
+
+define MAXPLAYERHEALTH          100
+define MAXWATERFOUNTAINHEALTH    50
+
+define YELLHURTSOUNDSTRENGTH     40
+define YELLHURTSOUNDSTRENGTHMP   50
+
+define MAXXSTRETCH 70
+define MAXYSTRETCH 70
+
+define MINXSTRETCH 9
+define MINYSTRETCH 8
+
+define MAXPLAYERATOMICHEALTH    200     // doubles as maxarmor.
+define DOUBLEMAXPLAYERHEALTH    MAXPLAYERATOMICHEALTH
+define STARTARMORHEALTH         0
+define RETRIEVEDISTANCE         844
+define SQUISHABLEDISTANCE      1024 // For actors only!
+define DEFAULTVISIBILITY        512
+define FROZENQUICKKICKDIST      980
+
+define GENERICIMPACTDAMAGE      10
+
+define MAXPISTOLAMMO           200
+define MAXSHOTGUNAMMO           50
+define MAXCHAINGUNAMMO         200
+define MAXRPGAMMO               50
+define MAXHANDBOMBAMMO          50
+define MAXSHRINKERAMMO          50
+define MAXGROWAMMO              50
+define MAXDEVISTATORAMMO        99
+define MAXFREEZEAMMO            99
+define MAXTRIPBOMBAMMO          10
+define TRIPBOMBLASERMODE        0     // 0 = always visable
+                                      // 1 = transluscense
+                                      // 2 = invisible w/o IR goggles
+                                      // 3 = totally invisable
+
+
+
+define RESPAWNACTORTIME         768
+define RESPAWNITEMTIME          768
+
+define QSIZE                   64       // total number of active
+                                        // bullet holes, blood,
+                                        // footprints, money, ect...
+                                        // (max 1024)
+
+// The BLIMP has a high respawn time (any value smaller runs the risk
+// of spawning too many sprites, resulting in "Bog City")
+
+define BLIMPRESPAWNTIME 2048
+
+define NUMFREEZEBOUNCES          3    // 0 - 255
+
+
+define RUNNINGSPEED 53200
+define GRAVITATIONALCONSTANT 176
+
+define PLAYDEADTIME 120
+
+define SHRUNKCOUNT 270
+define SHRUNKDONECOUNT 304
+
+define FROZENDRIPTIME 90
+define THAWTIME 138
+
+
+// Various blast radius distances
+
+define RPGBLASTRADIUS           1780
+define PIPEBOMBRADIUS           2500
+define SHRINKERBLASTRADIUS      680
+define TRIPBOMBBLASTRADIUS      3880
+define MORTERBLASTRADIUS        2500
+define BOUNCEMINEBLASTRADIUS    2500
+define SEENINEBLASTRADIUS       2048
+
+gamestartup     DEFAULTVISIBILITY GENERICIMPACTDAMAGE MAXPLAYERHEALTH
+                STARTARMORHEALTH  RESPAWNACTORTIME RESPAWNITEMTIME
+                RUNNINGSPEED GRAVITATIONALCONSTANT RPGBLASTRADIUS
+                PIPEBOMBRADIUS SHRINKERBLASTRADIUS TRIPBOMBBLASTRADIUS
+                MORTERBLASTRADIUS BOUNCEMINEBLASTRADIUS SEENINEBLASTRADIUS
+                MAXPISTOLAMMO MAXSHOTGUNAMMO MAXCHAINGUNAMMO
+                MAXRPGAMMO MAXHANDBOMBAMMO MAXSHRINKERAMMO
+                MAXDEVISTATORAMMO MAXTRIPBOMBAMMO MAXFREEZEAMMO
+                MAXGROWAMMO CAMERASDESTRUCTABLE NUMFREEZEBOUNCES
+                FREEZERHURTOWNER QSIZE TRIPBOMBLASERMODE
+
+
+// Weapon Strengths
+define KNEE_WEAPON_STRENGTH             10
+define PISTOL_WEAPON_STRENGTH            6
+define HANDBOMB_WEAPON_STRENGTH        140
+
+
+
+// For direct hits with the rocket launcher,
+// this amount is actually doubled.  Otherwise,
+// damage values depend on distance. The
+// further, the weaker.
+
+define RPG_WEAPON_STRENGTH              140
+
+
+define SHRINKER_WEAPON_STRENGTH          0
+define GROWSPARK_WEAPON_STRENGTH        15
+define SHOTGUN_WEAPON_STRENGTH          10
+define CHAINGUN_WEAPON_STRENGTH          9
+define FREEZETHROWER_WEAPON_STRENGTH    20
+define COOL_EXPLOSION_STRENGTH          38
+define TRIPBOMB_STRENGTH               100
+define FIRELASER_WEAPON_STRENGTH         7
+define MORTER_WEAPON_STRENGTH           50
+define BOUNCEMINE_WEAPON_STRENGTH      150
+define SPIT_WEAPON_STRENGTH              8
+define BULLET_WEAPON_STRENGTH           30
+
+// Enemy strengths (hit points).
+
+define TROOPSTRENGTH            30
+define PIGCOPSTRENGTH          100
+define PIG_SHIELD_AMOUNT1       75
+define PIG_SHIELD_AMOUNT2       50
+define LIZSTRENGTH             100
+define LIZGETTINGDAZEDAT        15
+define LIZEATINGPLAYER          -2
+define OCTASTRENGTH            175
+define OCTASCRATCHINGPLAYER    -11
+define RECONSTRENGTH            50
+define TURRETSTRENGTH           30
+define ROTTURRETSTRENGTH        40
+define DRONESTRENGTH           150
+define CAPTAINSTRENGTH          50
+define CAPTSPINNINGPLAYER      -11
+define COMMANDERSTRENGTH        350
+define SHARKSTRENGTH            35
+define SHARKBITESTRENGTH        -9
+define NEWBEASTSTRENGTH         300
+define NEWBEASTSCRATCHAMOUNT   -22
+define DOLPHINSTRENGTH          50
+
+define PISTOLAMMOAMOUNT         12
+define SHOTGUNAMMOAMOUNT        10
+define CHAINGUNAMMOAMOUNT       50
+define RPGAMMOBOX               5
+define CRYSTALAMMOAMOUNT        5
+define GROWCRYSTALAMMOAMOUNT    20
+define DEVISTATORAMMOAMOUNT     15
+define FREEZEAMMOAMOUNT         25
+define HANDBOMBBOX              5
+
+
+define BOSS1STRENGTH            4500
+define BOSS1PALSTRENGTH         1000
+define BOSS2STRENGTH            4500
+define BOSS3STRENGTH            4500
+define BOSS4STRENGTH            6000
+
+// Miscellaneous strengths.
+
+define WEAKEST           1
+define WEAK              5
+define MEDIUMSTRENGTH    10
+define TOUGH             20
+define REALLYTOUGH       30
+define ROBOTMOUSESTRENGTH 45
+define GOTTASMART        90
+define PIRATEGALSTRENGTH 200
+
+define MANWOMANSTRENGTH  100
+
+
+// Players' inventory amounts.
+
+define STEROID_AMOUNT           400
+define SHIELD_AMOUNT            100
+define SCUBA_AMOUNT            6400
+define HOLODUKE_AMOUNT         2400
+define JETPACK_AMOUNT          1600
+define HEAT_AMOUNT             1200
+define FIRSTAID_AMOUNT          MAXPLAYERHEALTH
+define BOOT_AMOUNT              200
+
+define SPAWNAMMOODDS             96
+
+
+
+
+
+

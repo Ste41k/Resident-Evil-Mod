@@ -1,0 +1,35 @@
+definetexture 2524 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/idle.png
+definetexture 2525 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/fire1.png
+definetexture 2526 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/fire2.png
+definetexture 2528 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/reload1.png
+definetexture 2529 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/reload2.png
+definetexture 2531 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/reload3.png
+definetexture 2532 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/reload4.png
+
+definetexture 2537 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp9/idle.png
+definetexture 2538 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp9/fire.png
+definetexture 2539 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp9/idle.png
+definetexture 2540 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp9/fire.png
+
+definetexture 2548 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp5/idle.png
+definetexture 2551 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp5/fire1.png
+definetexture 2552 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp5/fire2.png
+definetexture 2553 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/mp5/fire3.png
+
+definetexture 2573 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/nades/flashbang.png
+// definetexture 2573 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/nades/fragnade.png
+// definetexture 2573 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/nades/smokenade.png
+definetexture 2574 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/nades/throw1.png
+definetexture 2575 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/nades/throw2.png
+
+definetexture 2613 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/shotgun/idle.png
+definetexture 2616 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/shotgun/reload1.png
+definetexture 2617 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/shotgun/reload2.png
+definetexture 2618 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/shotgun/reload3.png
+definetexture 2619 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/shotgun/reload4.png
+
+//Shell Casings
+
+definetexture 2533 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/2533.png
+definetexture 2534 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/2534.png
+definetexture 2535 0 0 0 -1 -1 ResidentEvil_Data/gfx/weapons/usp/2535.png

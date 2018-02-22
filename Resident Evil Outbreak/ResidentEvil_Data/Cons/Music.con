@@ -1,0 +1,49 @@
+define MUSICCHANGE 5633
+
+
+state state_MIDICHANGES
+    getplayer[THISACTOR].player_par TEMP
+        ifvarvarl totalclock TEMP
+	
+        {
+	inittimer 120
+	ifvarn MIDICHANGES -1
+		{
+		starttrackvar MIDICHANGES
+		setvar MIDICHANGES -1
+		}
+	
+        }
+ends
+
+
+// Music (Midi) Change Code
+eventloadactor MUSICCHANGE
+    state GETHITAGLOTAG
+enda
+
+useractor notenemy MUSICCHANGE
+    cstat 32768
+
+ifvarn HITAGSAVED 0
+{
+checkactivatormotion HITAGSAVED
+    ifvare RETURN 1
+	{
+	getactor[THISACTOR].pal TEMP
+	starttrackvar TEMP
+	setvarvar MIDICHANGES TEMP
+	killit
+	}
+}
+
+else
+    ifpdistl 1024
+	{
+	getactor[THISACTOR].pal TEMP
+	starttrackvar TEMP
+	setvarvar MIDICHANGES TEMP
+	killit
+	}
+
+enda

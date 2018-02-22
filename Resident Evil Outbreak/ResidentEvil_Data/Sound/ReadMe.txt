@@ -1,0 +1,1 @@
+This Folder is for storing all sounds and music in there appropriate sub folder.

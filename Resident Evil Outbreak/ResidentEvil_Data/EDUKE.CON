@@ -1,0 +1,5 @@
+
+
+include			cons\AlphaCode-CON-LoadOrder.con
+setdefname		defs\AlphaCode-DEF-LoadOrder.def
+

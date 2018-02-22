@@ -1,0 +1,15 @@
+
+
+
+
+
+
+defineskybox 6299 0 0 "ResidentEvil_Data/gfx/skybox/evening/6299_2-front.JPG" "ResidentEvil_Data/gfx/skybox/evening/6299_2-right.JPG" 
+"ResidentEvil_Data/gfx/skybox/evening/6299_2-back.JPG" "ResidentEvil_Data/gfx/skybox/evening/6299_2-left.JPG"
+"ResidentEvil_Data/gfx/skybox/evening/6299_2-top.JPG" "ResidentEvil_Data/gfx/skybox/evening/6299_2-bottom.JPG"
+
+defineskybox 6300 0 0 "ResidentEvil_Data/gfx/skybox/forrest/6300_2-front.JPG" "ResidentEvil_Data/gfx/skybox/forrest/6300_2-right.JPG" 
+"ResidentEvil_Data/gfx/skybox/forrest/6300_2-back.JPG" "ResidentEvil_Data/gfx/skybox/forrest/6300_2-left.JPG"
+"ResidentEvil_Data/gfx/skybox/forrest/6300_2-top.JPG" "ResidentEvil_Data/gfx/skybox/forrest/6300_2-bottom.JPG"
+
+

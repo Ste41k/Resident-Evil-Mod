@@ -1,0 +1,5 @@
+
+include			Actors\Enemies\AlphaCode-Enemies-LoadOrder.con
+//include			Actor\NPC\AlphaCode-NPC-LoadOrder.con
+//include			Actor\Player\AlphaCode-Player-LoadOrder.con
+

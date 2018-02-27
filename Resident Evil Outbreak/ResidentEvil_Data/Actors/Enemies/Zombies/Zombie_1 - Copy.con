@@ -1,0 +1,124 @@
+//Code By SomeThingEviL : Erik Ramsey
+//A BuildGameWorks™ Effort
+//
+//Contact Info
+//
+//Most likely way to get immediate contact.
+//Skype:Ste41k
+//
+//For Duke 3D and Build Game Related stuff
+//Duke4.net forums:https://forums.duke4.net/user/1351-somethingevil/
+//
+//G-mail:Ste41k@gmail.com
+//Very Rarely Checked but not likely to ever change.
+//
+
+
+
+
+
+//Actor Tile
+define ZOMBIE 10240
+
+//Actor Health
+define ZOMBIESTRENGTH 30
+
+
+//spriteflags HURTSPAWNBLOOD + NODAMAGEPUSH + SMOOTHMOVE
+spriteflags ZOMBIE 5251072
+
+
+///////////////////////////////////////////////////////////////
+//Sounds///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+define ZOMBIE_ATTACK		620
+define ZOMBIE_BITTING		621
+define ZOMBIE_DEATH			622
+define ZOMBIE_DEATHDROP		623
+define ZOMBIE_HIT			624
+define ZOMBIE_SPOT			625
+define ZOMBIE_WALKING		626
+
+//definesound <value> 									<filename> 							<pitch1> <pitch2> <priority> <type> <volume>
+
+definesound ZOMBIE_ATTACK		Actors\Enemies\Zombies\GlobalZombieSounds\z01_attack.wav			0 0 0 0 0
+definesound ZOMBIE_BITTING		Actors\Enemies\Zombies\GlobalZombieSounds\z01_bitting.wav			0 0 0 0 0
+definesound ZOMBIE_DEATH		Actors\Enemies\Zombies\GlobalZombieSounds\z01_death.wav				0 0 0 0 0
+definesound ZOMBIE_DEATHDROP	Actors\Enemies\Zombies\GlobalZombieSounds\z01_deathdrop.wav			0 0 0 0 0
+definesound ZOMBIE_HIT			Actors\Enemies\Zombies\GlobalZombieSounds\z01_hit.wav				-128 128 0 0 0
+definesound ZOMBIE_SPOT			Actors\Enemies\Zombies\GlobalZombieSounds\z01_spot.wav				0 0 0 0 0
+definesound ZOMBIE_WALKING		Actors\Enemies\Zombies\GlobalZombieSounds\z01_walking.wav			0 0 0 0 0
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+
+
+
+action AZOMBIESTAND				0	1	5	1	0
+action AZOMBIEWALKING			8	22	5	1	8
+action AZOMBIERUNNING			8	22	5	1	4
+action AZOMBIEATTACK			119	14	5	1	4
+action AZOMBIEFLINCH			190	13	5	1	4
+action AZOMBIEDYING				267	15	5	1	16
+action AZOMBIEDEAD				337	1	5	1	0
+
+
+
+move ZOMBIESTOPPED			  0
+move ZOMBIEWALKVEL			 32
+move ZOMBIERUNVEL			100
+
+
+ai AIZOMBIEWAIT			AZOMBIESTAND		ZOMBIESTOPPED faceplayer
+ai AIZOMBIE_WALK		AZOMBIEWALKING		ZOMBIEWALKVEL faceplayer
+ai AIAZOMBIEATTACK		AZOMBIEATTACK		ZOMBIESTOPPED faceplayer
+ai AIZOMBIEDYING		AZOMBIEDYING		ZOMBIESTOPPED faceplayer
+ai AIZOMBIE_FLINCH		AZOMBIEFLINCH		ZOMBIESTOPPED
+
+
+
+
+useractor enemy ZOMBIE fall
+
+ifai NO { soundonce ZOMBIE_SPOT  strength 300 sizeat 17 17 cstator 257 ai AIZOMBIE_WALK }
+
+////--------------------------------------If hit Code------------------------------------------------------------------------
+
+{
+ifhitweapon 
+{
+
+ifwasweapon RPG ifdead { addkills 1 guts JIBS6 10 sound SQUISHED killit } 
+
+else ifwasweapon RADIUSEXPLOSION ifdead { addkills 1 guts JIBS6 10 sound SQUISHED killit }
+
+else ifdead { addkills 1 guts JIBS6 10  sound ZOMBIE_DEATH ai AIZOMBIEDYING }
+
+else ifwasweapon SHOTSPARK1 { sound ZOMBIE_HIT spawn BLOOD guts JIBS6 3 ifrnd 128 ai AIZOMBIE_FLINCH }
+
+sound ZOMBIE_HIT spawn BLOOD guts JIBS6 3 ifrnd 128 ai AIZOMBIE_FLINCH
+
+} }
+
+
+ifai AIZOMBIE_FLINCH { ifactioncount 13 ai AIZOMBIE_WALK }
+
+
+ifai AIZOMBIEDYING 
+
+{
+ifactioncount 13
+ifactioncount 15
+{
+ cstat 0
+ action AZOMBIEDEAD 
+
+ ifhitweapon { }
+ break
+ }
+  break
+ }
+ 
+enda

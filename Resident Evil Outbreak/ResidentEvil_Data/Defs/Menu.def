@@ -10,7 +10,6 @@ definetexture 2503 0 0 0 0 0 "ResidentEvil_Data/Gfx/menu/Blank.PNG"
 
 
 
-tilefromtexture 2492 { file "ResidentEvil_Data/Gfx/menu/intro_indexed.png" }
 
 tilefromtexture 2499 { file "ResidentEvil_Data/Gfx/menu/ResidentEvil_alt1.png" xoffset  0  yoffset  15 }
 

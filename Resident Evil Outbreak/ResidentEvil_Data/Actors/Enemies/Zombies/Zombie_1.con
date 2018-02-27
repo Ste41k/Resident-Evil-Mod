@@ -1,0 +1,812 @@
+
+
+
+//Actor Tile
+define ZOMBIE 10240
+
+//Actor Health
+define ZOMBIESTRENGTH 30
+
+define ZOMBIESCRATCHAMOUNT -1
+
+
+
+
+///////////////////////////////////////////////////////////////
+//Sounds///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+define ZOMBIE_ATTACK		420
+define ZOMBIE_BITTING		421
+define ZOMBIE_DEATH			422
+define ZOMBIE_DEATHDROP		423
+define ZOMBIE_PAIN			424
+define ZOMBIE_SPOT			425
+define ZOMBIE_WALKING		426
+
+//definesound <value> 									<filename> 							<pitch1> <pitch2> <priority> <type> <volume>
+
+definesound ZOMBIE_ATTACK		Actors\Enemies\Zombies\GlobalZombieSounds\z01_attack.wav			0 0 0 0 0
+definesound ZOMBIE_BITTING		Actors\Enemies\Zombies\GlobalZombieSounds\z01_bitting.wav			0 0 0 0 0
+definesound ZOMBIE_DEATH		Actors\Enemies\Zombies\GlobalZombieSounds\z01_death.wav				0 0 0 0 0
+definesound ZOMBIE_DEATHDROP	Actors\Enemies\Zombies\GlobalZombieSounds\z01_deathdrop.wav			0 0 0 0 0
+definesound ZOMBIE_PAIN			Actors\Enemies\Zombies\GlobalZombieSounds\z01_hit.wav				-128 128 0 0 0
+definesound ZOMBIE_SPOT			Actors\Enemies\Zombies\GlobalZombieSounds\z01_spot.wav				0 0 0 0 0
+definesound ZOMBIE_WALKING		Actors\Enemies\Zombies\GlobalZombieSounds\z01_walking.wav			0 0 0 0 0
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+defstate random_wall_jibs
+  ifrnd 96
+    shoot BLOODSPLAT1
+  ifrnd 96
+    shoot BLOODSPLAT2
+  ifrnd 96
+    shoot BLOODSPLAT3
+  ifrnd 96
+    shoot BLOODSPLAT4
+  ifrnd 96
+    shoot BLOODSPLAT1
+ends //===========================================================================
+
+
+
+defstate random_ooz
+  ifrnd 128
+    spawn OOZ2
+  else
+    spawn OOZ
+ends //===========================================================================
+
+
+defstate jib_sounds
+  ifrnd SWEARFREQUENCY
+  {
+    ifrnd 128
+    {
+      ifrnd 128
+      {
+        ifrnd 128
+        {
+          ifrnd 128
+          {
+            ifrnd 128
+              globalsound JIBBED_ACTOR12
+            else
+              globalsound JIBBED_ACTOR1
+          }
+          else
+          {
+            ifrnd 128
+              globalsound JIBBED_ACTOR9
+            else
+              globalsound JIBBED_ACTOR14
+          }
+        }
+        else
+        {
+          ifrnd 128
+            globalsound SMACKED
+          else
+            globalsound JIBBED_ACTOR2
+        }
+      }
+      else
+      {
+        ifrnd 128
+          globalsound MDEVSPEECH
+        else
+          globalsound JIBBED_ACTOR5
+      }
+    }
+    else
+    {
+      ifrnd 128
+      {
+        ifrnd 128
+        {
+          ifrnd 128
+            globalsound JIBBED_ACTOR11
+          else
+            globalsound JIBBED_ACTOR13
+        }
+        else
+        {
+          ifrnd 128
+            globalsound JIBBED_ACTOR3
+          else
+            globalsound JIBBED_ACTOR8
+        }
+      }
+      else
+      {
+        ifrnd 128
+        {
+          ifrnd 128
+            globalsound JIBBED_ACTOR6
+          else
+            globalsound JIBBED_ACTOR4
+        }
+        else
+        {
+          ifrnd 128
+          {
+            ifrnd 128
+              globalsound JIBBED_ACTOR10
+            else
+              globalsound JIBBED_ACTOR15
+
+          }
+          else
+            globalsound JIBBED_ACTOR7
+        }
+      }
+    }
+  }
+ends //===========================================================================
+
+
+defstate standard_jibs
+  guts JIBS2 1
+  guts JIBS3 2
+  guts JIBS4 3
+  guts JIBS5 2
+  guts JIBS6 3
+  ifrnd 6
+  {
+    guts JIBS1 1
+    spawn BLOODPOOL
+  }         // a badly drawn spine
+
+  state jib_sounds
+ends //===========================================================================
+
+
+//defstate genericshrunkcode
+//  ifcount 32
+//  {
+//    ifpdistl SQUISHABLEDISTANCE
+//    pstomp
+//  }
+//  else
+//  {
+//    sizeto MINXSTRETCH MINYSTRETCH
+//    spawn FRAMEEFFECT1
+//  }
+//ends //===========================================================================
+//
+//
+//defstate genericgrowcode
+//  ifcount 32
+//  {
+//    guts JIBS4 24
+//    guts JIBS6 28
+//    addkills 1
+//    sound SQUISHED
+//    sound PIPEBOMB_EXPLODE
+//    hitradius 2048 60 70 80 90
+//    spawn BLOODPOOL
+//    spawn EXPLOSION2
+//    killit
+//  }
+//  else
+//  {
+//    ifactor COMMANDER
+//      sizeto 100 100
+//    else
+//      ifactor SHARK
+//        sizeto 84 84
+//    else
+//      sizeto MAXXSTRETCH MAXYSTRETCH
+//    break
+//  }
+//ends //===========================================================================
+
+defstate rf
+  ifrnd 128
+    cstat 4
+  else
+    cstat 0
+ends //===========================================================================
+
+defstate checksquished
+  ifsquished
+  {
+    addkills 1
+    sound SQUISHED
+    state standard_jibs
+    state random_ooz
+    killit
+  }
+ends //===========================================================================
+
+
+
+
+action AZOMBIEFROZEN    10  1  5
+
+action AZOMBIESTAND   		0
+action AZOMBIEWALKING  	    8		22		5		1		12
+action AZOMBIERUNNING		8		22		5		1		8
+action AZOMBIETHINK			0		1		5		1		40
+action AZOMBIESCRATCHING 	119		14		5		1		10
+action AZOMBIEDYING			267		15		5		1		15
+action AZOMBIEFLINTCH		190		13		5		1		8
+action AZOMBIELYINGDEAD		337		1		1		 		
+action AZOMBIESCREAM		0		2		5		1		40
+action AZOMBIEJUMP			119		2		5		1		50
+action AZOMBIEFALL			0		1		5		 		
+action AZOMBIEHANG			0		1		5		 		
+action AZOMBIEHANGDEAD      -1		1		5		 		
+
+move ZOMBIEWALKVEL 60
+move ZOMBIERUNVEL 80
+move ZOMBIEJUMPVEL 90
+move ZOMBIESTOP
+
+ai AIZOMBIEGETENEMY AZOMBIEWALKING ZOMBIEWALKVEL seekplayer
+ai AIZOMBIEDODGE AZOMBIERUNNING ZOMBIERUNVEL dodgebullet
+ai AIZOMBIECHARGEENEMY AZOMBIERUNNING ZOMBIERUNVEL seekplayer
+ai AIZOMBIEFLEENEMY AZOMBIEWALKING ZOMBIEWALKVEL fleeenemy
+ai AIZOMBIESCRATCHENEMY AZOMBIESCRATCHING ZOMBIESTOP faceplayerslow
+ai AIZOMBIEJUMPENEMY AZOMBIEJUMP ZOMBIEJUMPVEL jumptoplayer
+ai AIZOMBIETHINK AZOMBIETHINK ZOMBIESTOP
+// ai AIZOMBIESHRUNK AZOMBIEWALKING SHRUNKVELS fleeenemy
+ai AIZOMBIEGROW AZOMBIESTAND  ZOMBIESTOP faceplayerslow
+ai AIZOMBIEDYING AZOMBIEDYING ZOMBIESTOP faceplayer
+ai AIZOMBIESHOOT AZOMBIESCREAM ZOMBIESTOP faceplayerslow
+ai AIZOMBIEFLINTCH AZOMBIEFLINTCH ZOMBIESTOP faceplayerslow
+
+
+//useractor enemy ZOMBIEHANG ZOMBIESTRENGTH
+//  ifaction 0
+//  {
+//    action AZOMBIEHANG
+//    cstator 257
+//
+//    sizeat 40 40
+//  }
+//  else
+//    ifhitweapon
+//  {
+//    cactor ZOMBIE
+//    action AZOMBIESTAND
+//    // sound ZOMBIE_PAIN
+//  }
+//  else
+//    ifspawnedby BOSS4
+//      ifcount 200
+//        ifrnd 1
+//  {
+//    cactor ZOMBIE
+//    action AZOMBIESTAND
+//    // sound ZOMBIE_PAIN
+//  }
+//enda //===========================================================================
+//
+//
+//useractor enemy ZOMBIEHANGDEAD TOUGH
+//
+//  ifaction 0
+//  {
+//    action AZOMBIEHANGDEAD
+//    sizeat 40 40
+//    cstator 257
+//  }
+//  else
+//    ifhitweapon
+//  {
+//    ifdead
+//    {
+//      state standard_jibs
+//      spawn BLOODPOOL
+//      // sound SQUISHED
+//      killit
+//    }
+//    else
+//    {
+//      guts JIBS6 1
+//      // sound SQUISHED
+//    }
+//  }
+//enda //===========================================================================
+
+
+
+
+defstate ZOMBIEseekstate
+
+  ifactornotstayput
+  {
+    ifp palive
+      ifcansee
+        ifpdistl 1024
+    {
+      ai AIZOMBIESCRATCHENEMY
+      break
+    }
+
+    ifai AIZOMBIECHARGEENEMY
+    {
+      ifp palive
+        ifpdistl 1024
+          ifcansee
+      {
+        ai AIZOMBIESCRATCHENEMY
+        break
+      }
+
+   //  ifrnd 1
+   //    ifpdistg 2048
+   //      ifp palive
+   //        ifcansee
+   //  {
+   //    ai AIZOMBIESHOOT
+   //    break
+   //  }
+    }
+    else
+      ifpdistg 2048
+    {
+      ai AIZOMBIECHARGEENEMY
+      break
+    }
+
+//   iffloordistl 16
+//   {
+//     ifcount 32
+//       ifrnd 16
+//     {
+//       ifceilingdistl 96 break
+//       ai AIZOMBIEJUMPENEMY
+//     }
+//     break
+//   }
+
+    ifrnd 4
+    {
+      ifnotmoving
+        operate
+    }
+    else
+      ifrnd 16
+        ifbulletnear
+    {
+      ifgapzl 128
+        ai AIZOMBIEDODGE
+      else
+        ifactornotstayput
+      {
+        //ifrnd 128
+        //{
+        //  ifceilingdistl 96 break
+        //  ai AIZOMBIEJUMPENEMY
+        //}
+        //else
+          ai AIZOMBIEDODGE
+      }
+    }
+  }
+  else
+  {
+    ifactioncount 16
+    {
+      ifp palive
+        ifpdistl 1024
+          ifcansee
+      {
+        ai AIZOMBIESCRATCHENEMY
+        break
+      }
+    }
+    ifcount 16
+      ifrnd 32
+        move ZOMBIEWALKVEL randomangle geth
+  }
+
+ends //===========================================================================
+
+/*
+state ZOMBIEshrunkstate
+  ifcount SHRUNKDONECOUNT
+    ai AIZOMBIEGETENEMY
+  else
+    ifcount SHRUNKCOUNT
+      sizeto 48 40
+  else
+    state genericshrunkcode
+ends //===========================================================================
+*/
+
+defstate ZOMBIEfleestate
+  ifcount 8
+ //{
+ //  ifrnd 64
+ //    ifpdistg 1750
+ //      ifp palive
+ //        ifcansee
+ //          ai AIZOMBIESHOOT
+ //}
+ //else
+  {
+    iffloordistl 16
+    {
+      ifnotmoving
+        ai AIZOMBIEGETENEMY
+    }
+    else
+      ai AIZOMBIEGETENEMY
+    break
+  }
+ends //===========================================================================
+
+defstate ZOMBIEthinkstate
+
+  ifrnd 8
+    soundonce ZOMBIE_SPOT
+
+  ifactioncount 3
+  {
+    //ifrnd 128
+    //{
+    //  ifpdistg 1750
+    //    ifp palive
+    //      ifcansee
+    //        ai AIZOMBIESHOOT
+    //}
+    //else
+      ai AIZOMBIEGETENEMY
+  }
+
+  ifrnd 16
+    ifbulletnear
+  {
+    ifgapzl 96
+      ai AIZOMBIEDODGE
+   //else
+   //{
+   //  ifrnd 128
+   //  {
+   //    ifceilingdistl 144 break
+   //    ai AIZOMBIEJUMPENEMY
+   //  }
+   //  else
+   //    ai AIZOMBIEDODGE
+   //}
+  }
+ends //===========================================================================
+
+defstate ZOMBIEscratchstate
+  ifcount 10
+    ifrnd 8
+  {
+    ifcansee
+      ifpdistl 1024
+    {
+      ifrnd 128
+        ai AIZOMBIEFLEENEMY
+      break
+    }
+    ifrnd 80
+      ai AIZOMBIETHINK
+    else
+      ai AIZOMBIEGETENEMY
+  }
+
+  ifactioncount 10
+  {
+    ifpdistg 1024
+      ai AIZOMBIETHINK
+    else ifp palive ifcansee
+    {
+      palfrom 16 16
+      addphealth ZOMBIESCRATCHAMOUNT
+      // sound DUKE_GRUNT
+      resetactioncount
+      resetcount
+    }
+  }
+  else
+    ifcount 9
+      nullop
+  else
+    ifcount 8
+  {
+    ifpdistl 1024
+      soundonce ZOMBIE_BITTING
+    else
+      soundonce ZOMBIE_BITTING
+  }
+ends //===========================================================================
+
+defstate checkZOMBIEhit
+  spawn BLOOD
+/*
+  ifai AIZOMBIESHRUNK
+  {
+    addkills 1
+    // sound SQUISHED
+    state standard_jibs
+    killit
+  }
+*/
+  ifdead
+  {
+    ifwasweapon FREEZEBLAST
+    {
+      // sound SOMETHINGFROZE
+      spritepal 1
+      move 0
+      action AZOMBIEFROZEN
+      strength 0
+      break
+    }
+
+    ifwasweapon GROWSPARK
+    {
+      cstat 0
+      // sound ACTOR_GROWING
+      ai AIZOMBIEGROW
+      break
+    }
+
+    addkills 1
+
+    ifwasweapon RPG
+    {
+      // sound SQUISHED
+      //state liz_body_jibs
+      state standard_jibs
+      killit
+    }
+    else
+      ifwasweapon RADIUSEXPLOSION
+    {
+      // sound SQUISHED
+      //state liz_body_jibs
+      state standard_jibs
+      killit
+    }
+    else
+    {
+      state rf
+      ai AIZOMBIEDYING
+      ifrnd 64
+        spawn BLOODPOOL
+    }
+     sound ZOMBIE_DEATH
+  }
+  else
+  {
+     sound ZOMBIE_PAIN
+    ifwasweapon GROWSPARK
+      // sound EXPANDERHIT
+/*
+//  The alien is immune to the shrinker
+    ifwasweapon SHRINKSPARK
+    {
+      // sound ACTOR_SHRINKING
+      ai AIZOMBIESHRUNK
+      break
+    }
+*/
+    state random_wall_jibs
+    ifrnd 256
+      ai AIZOMBIEFLINTCH
+    else
+      ifrnd 32
+          ifp palive
+            ifcansee
+              ai AIZOMBIEGETENEMY
+  }
+ends //===========================================================================
+
+defstate ZOMBIEjumpstate
+  ifaction AZOMBIEFALL
+  {
+    iffloordistl 16
+      ai AIZOMBIEGETENEMY
+  }
+  else
+    ifcount 32
+      action AZOMBIEFALL
+ends //===========================================================================
+
+defstate ZOMBIEdyingstate
+  ifaction AZOMBIELYINGDEAD
+  {
+    strength 0
+    ifhitweapon
+      ifwasweapon RADIUSEXPLOSION
+    {
+      // sound SQUISHED
+      state standard_jibs
+      killit
+    }
+    ifcount RESPAWNACTORTIME
+      ifrespawn
+    {
+      spawn TRANSPORTERSTAR
+      cstat 257
+      strength ZOMBIESTRENGTH
+      ai AIZOMBIEGETENEMY
+    }
+  }
+  else
+    ifai AIZOMBIEDYING
+      ifactioncount 15
+  {
+    iffloordistl 8
+      // sound THUD
+    move ZOMBIESTOP
+    action AZOMBIELYINGDEAD
+  }
+ends //===========================================================================
+
+defstate ZOMBIEdodgestate
+  ifcount 13
+    ai AIZOMBIEGETENEMY
+ends //===========================================================================
+
+//useractor enemystayput ZOMBIESTAYPUT ZOMBIESTRENGTH ai AIZOMBIEGETENEMY cstator 257 cactor ZOMBIE enda //===========================================================================
+//useractor enemy ZOMBIEJUMP ZOMBIESTRENGTH ai AIZOMBIEJUMPENEMY cstator 257 cactor ZOMBIE enda //===========================================================================
+
+defstate ZOMBIEcode
+  state checksquished
+  ifai 0
+  {
+    cstator 257
+    ai AIZOMBIEGETENEMY
+  }
+  else
+    ifaction AZOMBIELYINGDEAD
+  {
+    fall
+    state ZOMBIEdyingstate
+    break
+  }
+  else
+    ifaction AZOMBIEFROZEN
+  {
+    ifcount THAWTIME
+    {
+      ai AIZOMBIEGETENEMY
+      spritepal 0
+    }
+    else
+      ifcount FROZENDRIPTIME
+    {
+      ifactioncount 26
+      {
+        spawn WATERDRIP
+        resetactioncount
+      }
+    }
+
+    ifhitweapon
+    {
+      ifwasweapon FREEZEBLAST
+      {
+        strength 0
+        break
+      }
+      addkills 1
+
+      ifrnd 84
+        spawn BLOODPOOL
+      lotsofglass 30
+      // sound GLASS_BREAKING
+      killit
+    }
+    ifp pfacing
+      ifpdistl FROZENQUICKKICKDIST
+        pkick
+    break
+  }
+// else
+//   ifai AIZOMBIEJUMPENEMY
+//     state ZOMBIEjumpstate
+  else
+  {
+    fall
+    ifai AIZOMBIEGETENEMY
+      state ZOMBIEseekstate
+    else
+      ifai AIZOMBIECHARGEENEMY
+        state ZOMBIEseekstate
+    else
+      ifai AIZOMBIEFLINTCH
+    {
+      ifactioncount 8
+        ai AIZOMBIEGETENEMY
+    }
+
+    else
+      ifai AIZOMBIEDODGE
+        state ZOMBIEdodgestate
+    else
+      ifai AIZOMBIESCRATCHENEMY
+        state ZOMBIEscratchstate
+    else
+      ifai AIZOMBIEFLEENEMY
+        state ZOMBIEfleestate
+    else
+      ifai AIZOMBIETHINK
+        state ZOMBIEthinkstate
+/*
+    else
+      ifai AIZOMBIESHRUNK
+        state ZOMBIEshrunkstate
+*/
+    else
+      ifai AIZOMBIEGROW
+        state genericgrowcode
+    else
+      ifai AIZOMBIEDYING
+        state ZOMBIEdyingstate
+    else
+      ifai AIZOMBIESHOOT
+    {
+      ifp pshrunk
+        ai AIZOMBIEGETENEMY
+      else
+        ifcount 26
+          ai AIZOMBIEGETENEMY
+      else
+        ifcount 25
+          shoot SHRINKER
+      else
+      {
+        ifcount 5
+          nullop
+        else
+          ifcount 4
+             sound ZOMBIE_ATTACK
+      }
+    }
+  }
+
+  ifhitweapon
+    state checkZOMBIEhit
+ends //===========================================================================
+
+
+useractor enemy ZOMBIE ZOMBIESTRENGTH
+  fall
+  ifaction 0
+  {
+    cstator 257
+    sizeat 17 17
+    ai AIZOMBIEDODGE
+  }
+  ifaction AZOMBIEFROZEN
+    state ZOMBIEcode
+  else
+  {
+    spritepal 6
+    state ZOMBIEcode
+    ifaction AZOMBIEFROZEN
+      break
+    getlastpal
+  }
+enda //===========================================================================

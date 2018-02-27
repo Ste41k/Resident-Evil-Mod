@@ -302,7 +302,7 @@ define	DUKE_LONGTERM_PAIN             211
 define	MONITOR_ACTIVE                 212
 
 
-//define	NITEVISION_ONOFF		   213 //used as a menu sound also.
+define	NITEVISION_ONOFF		   213 //used as a menu sound also.
 
 
 define	DUKE_HIT_STRIPPER2             214

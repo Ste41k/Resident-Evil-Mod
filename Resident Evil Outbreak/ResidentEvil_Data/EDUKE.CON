@@ -1,5 +1,6 @@
 
 
-include			cons\AlphaCode-CON-LoadOrder.con
-setdefname		defs\AlphaCode-DEF-LoadOrder.def
+include			Cons\AlphaCode-CON-LoadOrder.con
+include			Actors\AlphaCode-Actor-LoadOrder.con
+setdefname		Defs\AlphaCode-DEF-LoadOrder.def
 

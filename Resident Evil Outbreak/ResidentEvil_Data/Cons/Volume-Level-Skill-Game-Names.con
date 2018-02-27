@@ -9,7 +9,7 @@ setgamename Resident Evil Outbreak
 // Volume titles cannot excede 32 characters.
 
 definevolumename 0 Raccoon City
-
+definevolumename 1 Enemy Test Map
 
 
 // Skill titles cannot excede 32 characters.
@@ -25,4 +25,10 @@ defineskillname 3 Expert
 // Level titles cannot excede 32 characters.
 
 definelevelname 0 0 ResidentEvil_Data\maps\Resident180.map 00:00 00:00 Raccoon City Streets
+
+definelevelname 1 0 ResidentEvil_Data\maps\Resident180_edit_ste41k_enemytest.map 00:00 00:00 Raccoon City Streets
+
+
+
+
 

@@ -6,7 +6,7 @@ Use it to include all your con modules with the right load order.
 Files tagged BetaCode will always be first in your AlphaCode load order.
 BetaCode files are for generic states and gamevars that can be used by multiple cons lower in the load order.
 
-
+(If this idea Seems Bat shit crazy we can do it different.This was just a idea I had for how to keep my cons in order.)
 
 What is a con file:
 In Duke 3D con files where used to attach code to tiles from a .art file.

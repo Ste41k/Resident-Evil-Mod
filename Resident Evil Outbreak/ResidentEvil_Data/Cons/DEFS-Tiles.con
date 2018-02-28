@@ -10,6 +10,13 @@ define MASTERSWITCH 8
 define RESPAWN 9
 define GPSPEED 10
 define ARROW 20
+
+
+
+
+
+//Duke 3d Weapons And Pickups
+
 define FIRSTGUNSPRITE 21
 define CHAINGUNSPRITE 22
 define RPGSPRITE 23
@@ -43,6 +50,12 @@ define JETPACK 57
 define HEATSENSOR 59
 define ACCESSCARD 60
 define BOOTS 61
+
+
+
+
+
+
 define MIRRORBROKE 70
 define CLOUDYOCEAN 78
 define CLOUDYSKIES 79
@@ -95,6 +108,11 @@ define BIGFORCE 230
 define EPISODE 247
 define MASKWALL9 255
 define W_LIGHT 260
+
+
+
+
+
 define SCREENBREAK1 263
 define SCREENBREAK2 264
 define SCREENBREAK3 265
@@ -108,6 +126,11 @@ define SCREENBREAK10 272
 define SCREENBREAK11 273
 define SCREENBREAK12 274
 define SCREENBREAK13 275
+
+
+
+
+
 define MASKWALL1 285
 define W_TECHWALL1 293
 define W_TECHWALL2 297

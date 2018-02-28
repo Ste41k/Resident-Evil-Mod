@@ -26,7 +26,7 @@ include ResidentEvil_Data\cons\USER.con
 
 include ResidentEvil_Data\cons\GenericEffects\Doors.con
 
-include ResidentEvil_Data\cons\Music.con
+include ResidentEvil_Data\cons\GenericEffects\Music.con
 
 include ResidentEvil_Data\cons\GAME.con
 

@@ -256,12 +256,12 @@ action AZOMBIELYINGDEAD		337		1		1
 action AZOMBIESCREAM		0		2		5		1		40
 action AZOMBIEJUMP			119		2		5		1		50
 action AZOMBIEFALL			0		1		5		 		
-action AZOMBIEHANG			0		1		5		 		
+//action AZOMBIEHANG			0		1		5		 		
 action AZOMBIEHANGDEAD      -1		1		5		 		
 
-move ZOMBIEWALKVEL 60
-move ZOMBIERUNVEL 80
-move ZOMBIEJUMPVEL 90
+move ZOMBIEWALKVEL 40
+move ZOMBIERUNVEL 60
+move ZOMBIEJUMPVEL 60
 move ZOMBIESTOP
 
 ai AIZOMBIEGETENEMY AZOMBIEWALKING ZOMBIEWALKVEL seekplayer
@@ -621,16 +621,16 @@ defstate checkZOMBIEhit
   }
 ends //===========================================================================
 
-defstate ZOMBIEjumpstate
-  ifaction AZOMBIEFALL
-  {
-    iffloordistl 16
-      ai AIZOMBIEGETENEMY
-  }
-  else
-    ifcount 32
-      action AZOMBIEFALL
-ends //===========================================================================
+//defstate ZOMBIEjumpstate
+//  ifaction AZOMBIEFALL
+//  {
+//    iffloordistl 16
+//      ai AIZOMBIEGETENEMY
+//  }
+//  else
+//    ifcount 32
+//      action AZOMBIEFALL
+//ends //===========================================================================
 
 defstate ZOMBIEdyingstate
   ifaction AZOMBIELYINGDEAD
@@ -796,7 +796,7 @@ useractor enemy ZOMBIE ZOMBIESTRENGTH
   ifaction 0
   {
     cstator 257
-    sizeat 17 17
+    sizeat 18 18
     ai AIZOMBIEDODGE
   }
   ifaction AZOMBIEFROZEN

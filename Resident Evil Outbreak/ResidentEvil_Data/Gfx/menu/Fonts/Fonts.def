@@ -1,0 +1,407 @@
+
+//MainMenu
+
+//numbers
+
+tilefromtexture	2929 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2929.png" }				// -
+tilefromtexture	2930 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2930.png" }				// 0
+tilefromtexture	2931 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2931.png" }				// 1
+tilefromtexture	2932 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2932.png" }				// 2
+tilefromtexture	2933 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2933.png" }				// 3
+tilefromtexture	2934 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2934.png" }				// 4
+tilefromtexture	2935 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2935.png" }				// 5
+tilefromtexture	2936 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2936.png" }				// 6
+tilefromtexture	2937 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2937.png" }				// 7
+tilefromtexture	2938 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2938.png" }				// 8
+tilefromtexture	2939 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2939.png" }				// 9
+		
+		
+definetexture 2929 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2929.png				// -
+definetexture 2930 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2930.png				// 0
+definetexture 2931 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2931.png				// 1
+definetexture 2932 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2932.png				// 2
+definetexture 2933 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2933.png				// 3
+definetexture 2934 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2934.png				// 4
+definetexture 2935 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2935.png				// 5
+definetexture 2936 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2936.png				// 6
+definetexture 2937 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2937.png				// 7
+definetexture 2938 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2938.png				// 8
+definetexture 2939 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2939.png				// 9		
+		
+		
+		
+		
+		
+
+		
+		
+//Letters		
+		
+		
+tilefromtexture	2940 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2940.png" }				// A
+tilefromtexture	2941 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2941.png" }				// B
+tilefromtexture	2942 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2942.png" }				// C
+tilefromtexture	2943 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2943.png" }				// D
+tilefromtexture	2944 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2944.png" }				// E
+tilefromtexture	2945 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2945.png" }				// F
+tilefromtexture	2946 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2946.png" }				// G
+tilefromtexture	2947 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2947.png" }				// H
+tilefromtexture	2948 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2948.png" }				// I
+tilefromtexture	2949 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2949.png" }				// J
+tilefromtexture	2950 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2950.png" }				// K
+tilefromtexture	2951 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2951.png" }				// L
+tilefromtexture	2952 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2952.png" }				// M
+tilefromtexture	2953 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2953.png" }				// N
+tilefromtexture	2954 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2954.png" }				// O
+tilefromtexture	2955 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2955.png" }				// P
+tilefromtexture	2956 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2956.png" }				// Q
+tilefromtexture	2957 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2957.png" }				// R
+tilefromtexture	2958 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2958.png" }				// S
+tilefromtexture	2959 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2959.png" }				// T
+tilefromtexture	2960 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2960.png" }				// U
+tilefromtexture	2961 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2961.png" }				// V
+tilefromtexture	2962 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2962.png" }				// W
+tilefromtexture	2963 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2963.png" }				// X
+tilefromtexture	2964 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2964.png" }				// Y
+tilefromtexture	2965 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_2965.png" }				// Z
+
+//Letters HD
+
+definetexture	2940 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2940.png  			// A
+definetexture	2941 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2941.png  			// B
+definetexture	2942 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2942.png  			// C
+definetexture	2943 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2943.png  			// D
+definetexture	2944 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2944.png  			// E
+definetexture	2945 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2945.png  			// F
+definetexture	2946 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2946.png  			// G
+definetexture	2947 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2947.png  			// H
+definetexture	2948 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2948.png  			// I
+definetexture	2949 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2949.png  			// J
+definetexture	2950 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2950.png  			// K
+definetexture	2951 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2951.png  			// L
+definetexture	2952 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2952.png  			// M
+definetexture	2953 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2953.png  			// N
+definetexture	2954 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2954.png  			// O
+definetexture	2955 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2955.png  			// P
+definetexture	2956 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2956.png  			// Q
+definetexture	2957 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2957.png  			// R
+definetexture	2958 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2958.png  			// S
+definetexture	2959 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2959.png  			// T
+definetexture	2960 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2960.png  			// U
+definetexture	2961 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2961.png  			// V
+definetexture	2962 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2962.png  			// W
+definetexture	2963 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2963.png  			// X
+definetexture	2964 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2964.png  			// Y
+definetexture	2965 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_2965.png  			// Z		
+		
+		
+		
+		
+	
+		
+		
+		
+tilefromtexture	3002 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3002.png" }				// .
+tilefromtexture	3003 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3003.png" }				// ,
+tilefromtexture	3004 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3004.png" }				// !
+tilefromtexture	3005 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3005.png" }				// ?
+tilefromtexture	3006 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3006.png" }				// ;
+tilefromtexture	3007 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3007.png" }				// :
+tilefromtexture	3008 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3008.png" }				// /
+tilefromtexture	3009 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3009.png" }				// %
+tilefromtexture	3022 { file "ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/Font_3022.png" }				// '
+
+
+definetexture	3002 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3002.png				// .
+definetexture	3003 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3003.png				// ,
+definetexture	3004 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3004.png				// !
+definetexture	3005 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3005.png				// ?
+definetexture	3006 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3006.png				// ;
+definetexture	3007 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3007.png				// :
+definetexture	3008 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3008.png				// /
+definetexture	3009 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3009.png				// %
+definetexture	3022 0 0 0 0 0 ResidentEvil_Data/Gfx/menu/Fonts/MainMenu/HD/Font_3022.png				// '
+
+
+
+
+
+
+//Console-Options
+
+tilefromtexture 2822 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2822.png" }		//	!
+tilefromtexture 2823 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2823.png" }      //	~
+tilefromtexture 2824 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2824.png" }      //	#
+tilefromtexture 2825 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2825.png" }      //	$
+tilefromtexture 2826 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2826.png" }      //	%
+tilefromtexture 2827 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2827.png" }      //	&
+tilefromtexture 2828 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2828.png" }      //	'
+tilefromtexture 2829 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2829.png" }      //	[
+tilefromtexture 2830 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2830.png" }      //	]
+tilefromtexture 2831 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2831.png" }      //	*
+tilefromtexture 2832 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2832.png" }      //	+
+tilefromtexture 2833 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2833.png" }      //	,
+tilefromtexture 2834 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2834.png" }      //	-
+tilefromtexture 2835 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2835.png" }      //	.
+tilefromtexture 2836 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2836.png" }      //	/
+
+
+
+
+tilefromtexture 2837 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2837.png" }      // 0
+tilefromtexture 2838 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2838.png" }      // 1
+tilefromtexture 2839 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2839.png" }      // 2
+tilefromtexture 2840 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2840.png" }      // 3
+tilefromtexture 2841 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2841.png" }      // 4
+tilefromtexture 2842 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2842.png" }      // 5
+tilefromtexture 2843 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2843.png" }      // 6
+tilefromtexture 2844 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2844.png" }      // 7
+tilefromtexture 2845 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2845.png" }      // 8
+tilefromtexture 2846 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2846.png" }      // 9
+
+
+
+tilefromtexture 2847 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2847.png" }      //	:
+tilefromtexture 2848 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2848.png" }      //	;
+tilefromtexture 2849 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2849.png" }      //	<
+tilefromtexture 2850 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2850.png" }      //	=
+tilefromtexture 2851 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2851.png" }      //	>
+tilefromtexture 2852 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2852.png" }      //	?
+tilefromtexture 2853 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2853.png" }      //	@
+
+
+tilefromtexture 2854 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2854.png" }      //	A
+tilefromtexture 2855 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2855.png" }      //	B
+tilefromtexture 2856 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2856.png" }      //	C
+tilefromtexture 2857 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2857.png" }      //	D
+tilefromtexture 2858 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2858.png" }      //	E
+tilefromtexture 2859 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2859.png" }      //	F
+tilefromtexture 2860 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2860.png" }      //	G
+tilefromtexture 2861 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2861.png" }      //	H
+tilefromtexture 2862 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2862.png" }      //	I
+tilefromtexture 2863 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2863.png" }      //	J
+tilefromtexture 2864 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2864.png" }      //	K
+tilefromtexture 2865 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2865.png" }      //	L
+tilefromtexture 2866 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2866.png" }      //	M
+tilefromtexture 2867 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2867.png" }      //	N
+tilefromtexture 2868 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2868.png" }      //	O
+tilefromtexture 2869 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2869.png" }      //	P
+tilefromtexture 2870 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2870.png" }      //	Q
+tilefromtexture 2871 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2871.png" }      //	R
+tilefromtexture 2872 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2872.png" }      //	S
+tilefromtexture 2873 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2873.png" }      //	T
+tilefromtexture 2874 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2874.png" }      //	U
+tilefromtexture 2875 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2875.png" }      //	V
+tilefromtexture 2876 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2876.png" }      //	W
+tilefromtexture 2877 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2877.png" }      //	X
+tilefromtexture 2878 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2878.png" }      //	Y
+tilefromtexture 2879 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2879.png" }      //	Z
+
+
+tilefromtexture 2880 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2880.png" }      //	[
+tilefromtexture 2881 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2881.png" }      //	\
+tilefromtexture 2882 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2882.png" }      //	]
+tilefromtexture 2883 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2883.png" }      //	^
+tilefromtexture 2884 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2884.png" }      //	-
+tilefromtexture 2885 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2885.png" }      //	.
+
+
+tilefromtexture 2886 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2886.png" }      //	A
+tilefromtexture 2887 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2887.png" }      //	B
+tilefromtexture 2888 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2888.png" }      //	C
+tilefromtexture 2889 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2889.png" }      //	D
+tilefromtexture 2890 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2890.png" }      //	E
+tilefromtexture 2891 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2891.png" }      //	F
+tilefromtexture 2892 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2892.png" }      //	G
+tilefromtexture 2893 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2893.png" }      //	H
+tilefromtexture 2894 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2894.png" }      //	I
+tilefromtexture 2895 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2895.png" }      //	J
+tilefromtexture 2896 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2896.png" }      //	K
+tilefromtexture 2897 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2897.png" }      //	L
+tilefromtexture 2898 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2898.png" }      //	M
+tilefromtexture 2899 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2899.png" }      //	N
+tilefromtexture 2900 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2900.png" }      //	O
+tilefromtexture 2901 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2901.png" }      //	P
+tilefromtexture 2902 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2902.png" }      //	Q
+tilefromtexture 2903 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2903.png" }      //	R
+tilefromtexture 2904 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2904.png" }      //	S
+tilefromtexture 2905 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2905.png" }      //	T
+tilefromtexture 2906 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2906.png" }      //	U
+tilefromtexture 2907 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2907.png" }      //	V
+tilefromtexture 2908 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2908.png" }      //	W
+tilefromtexture 2909 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2909.png" }      //	X
+tilefromtexture 2910 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2910.png" }      //	Y
+tilefromtexture 2911 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2911.png" }      //	Z
+
+tilefromtexture 2912 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2912.png" }      //	{
+tilefromtexture 2913 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2913.png" }      //	}
+tilefromtexture 2914 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2914.png" }      //	:
+tilefromtexture 2915 { file "ResidentEvil_Data\Gfx\menu\Fonts\Console-Options\Font_2915.png" }      //	~
+
+
+//Tiny
+
+tilefromtexture 3010 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3010.png" }
+tilefromtexture 3011 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3011.png" }
+tilefromtexture 3012 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3012.png" }
+tilefromtexture 3013 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3013.png" }
+tilefromtexture 3014 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3014.png" }
+tilefromtexture 3015 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3015.png" }
+tilefromtexture 3016 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3016.png" }
+tilefromtexture 3017 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3017.png" }
+tilefromtexture 3018 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3018.png" }
+tilefromtexture 3019 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3019.png" }
+tilefromtexture 3020 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3020.png" }
+tilefromtexture 3021 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3021.png" }
+tilefromtexture 3072 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3072.png" }
+tilefromtexture 3073 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3073.png" }
+tilefromtexture 3074 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3074.png" }
+tilefromtexture 3075 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3075.png" }
+tilefromtexture 3076 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3076.png" }
+tilefromtexture 3077 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3077.png" }
+tilefromtexture 3078 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3078.png" }
+tilefromtexture 3079 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3079.png" }
+tilefromtexture 3080 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3080.png" }
+tilefromtexture 3081 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3081.png" }
+tilefromtexture 3082 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3082.png" }
+tilefromtexture 3083 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3083.png" }
+tilefromtexture 3084 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3084.png" }
+tilefromtexture 3085 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3085.png" }
+tilefromtexture 3086 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3086.png" }
+tilefromtexture 3087 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3087.png" }
+tilefromtexture 3088 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3088.png" }
+tilefromtexture 3089 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3089.png" }
+tilefromtexture 3090 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3090.png" }
+tilefromtexture 3091 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3091.png" }
+tilefromtexture 3092 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3092.png" }
+tilefromtexture 3093 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3093.png" }
+tilefromtexture 3094 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3094.png" }
+tilefromtexture 3095 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3095.png" }
+tilefromtexture 3096 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3096.png" }
+tilefromtexture 3097 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3097.png" }
+tilefromtexture 3098 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3098.png" }
+tilefromtexture 3099 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3099.png" }
+tilefromtexture 3100 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3100.png" }
+tilefromtexture 3101 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3101.png" }
+tilefromtexture 3102 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3102.png" }
+tilefromtexture 3103 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3103.png" }
+tilefromtexture 3104 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3104.png" }
+tilefromtexture 3105 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3105.png" }
+tilefromtexture 3106 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3106.png" }
+tilefromtexture 3107 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3107.png" }
+tilefromtexture 3108 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3108.png" }
+tilefromtexture 3109 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3109.png" }
+tilefromtexture 3110 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3110.png" }
+tilefromtexture 3111 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3111.png" }
+tilefromtexture 3112 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3112.png" }
+tilefromtexture 3113 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3113.png" }
+tilefromtexture 3114 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3114.png" }
+tilefromtexture 3115 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3115.png" }
+tilefromtexture 3116 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3116.png" }
+tilefromtexture 3117 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3117.png" }
+tilefromtexture 3118 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3118.png" }
+tilefromtexture 3119 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3119.png" }
+tilefromtexture 3120 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3120.png" }
+tilefromtexture 3121 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3121.png" }
+tilefromtexture 3122 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3122.png" }
+tilefromtexture 3123 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3123.png" }
+tilefromtexture 3124 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3124.png" }
+tilefromtexture 3125 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3125.png" }
+tilefromtexture 3126 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3126.png" }
+tilefromtexture 3127 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3127.png" }
+tilefromtexture 3128 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3128.png" }
+tilefromtexture 3129 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3129.png" }
+tilefromtexture 3130 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3130.png" }
+tilefromtexture 3131 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3131.png" }
+tilefromtexture 3132 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3132.png" }
+tilefromtexture 3133 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3133.png" }
+tilefromtexture 3134 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3134.png" }
+tilefromtexture 3135 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3135.png" }
+tilefromtexture 3162 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3162.png" }
+tilefromtexture 3163 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3163.png" }
+tilefromtexture 3164 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3164.png" }
+tilefromtexture 3165 { file "ResidentEvil_Data/Gfx/menu/Fonts/Tiny/Font_3165.png" }
+
+
+//Alt
+
+tilefromtexture 2966 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2966.png" }
+tilefromtexture 2967 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2967.png" }
+tilefromtexture 2968 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2968.png" }
+tilefromtexture 2969 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2969.png" }
+tilefromtexture 2970 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2970.png" }
+tilefromtexture 2971 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2971.png" }
+tilefromtexture 2972 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2972.png" }
+tilefromtexture 2973 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2973.png" }
+tilefromtexture 2974 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2974.png" }
+tilefromtexture 2975 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2975.png" }
+tilefromtexture 2976 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2976.png" }
+tilefromtexture 2977 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2977.png" }
+tilefromtexture 2978 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2978.png" }
+tilefromtexture 2979 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2979.png" }
+tilefromtexture 2980 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2980.png" }
+tilefromtexture 2981 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2981.png" }
+tilefromtexture 2982 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2982.png" }
+tilefromtexture 2983 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2983.png" }
+tilefromtexture 2984 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2984.png" }
+tilefromtexture 2985 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2985.png" }
+tilefromtexture 2986 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2986.png" }
+tilefromtexture 2987 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2987.png" }
+tilefromtexture 2988 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2988.png" }
+tilefromtexture 2989 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2989.png" }
+tilefromtexture 2990 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2990.png" }
+tilefromtexture 2991 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2991.png" }
+tilefromtexture 2992 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2992.png" }
+tilefromtexture 2993 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2993.png" }
+tilefromtexture 2994 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2994.png" }
+tilefromtexture 2995 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2995.png" }
+tilefromtexture 2996 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2996.png" }
+tilefromtexture 2997 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2997.png" }
+tilefromtexture 2998 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2998.png" }
+tilefromtexture 2999 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_2999.png" }
+tilefromtexture 3000 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_3000.png" }
+tilefromtexture 3001 { file "ResidentEvil_Data\Gfx\menu\Fonts\Alt\Font_3001.png" }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,16 +4,17 @@
 
 
 
-//blank out Atomic from main menu
+//Main Menu Title, blank out Atomic from main menu
 definetexture 2502 0 0 0 0 0 "ResidentEvil_Data/Gfx/menu/Blank.PNG"
 definetexture 2503 0 0 0 0 0 "ResidentEvil_Data/Gfx/menu/Blank.PNG"
 
 
 
-
+//Main Menu Title
 tilefromtexture 2499 { file "ResidentEvil_Data/Gfx/menu/ResidentEvil_alt1.png" xoffset  0  yoffset  15 }
 
 
+//Main Menu Background
 tilefromtexture 2456 { file "ResidentEvil_Data/Gfx/menu/Backgroundresize.png" }
 
 
@@ -21,4 +22,4 @@ tilefromtexture 2456 { file "ResidentEvil_Data/Gfx/menu/Backgroundresize.png" }
 
 tilefromtexture 3281 { file "ResidentEvil_Data/Gfx/menu/3281.JPG" }
 
-
+include Gfx\menu\Fonts\Fonts.def

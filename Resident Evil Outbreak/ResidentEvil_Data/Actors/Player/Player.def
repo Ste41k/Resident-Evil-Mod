@@ -1,0 +1,193 @@
+
+//Player Stand/idle
+
+tilefromtexture 1405 { file "ResidentEvil_Data/Actors/Player/Player_1405.png" xoff -1 yoff 1 }
+tilefromtexture 1406 { file "ResidentEvil_Data/Actors/Player/Player_1406.png" xoff 5 yoff 1 }
+tilefromtexture 1407 { file "ResidentEvil_Data/Actors/Player/Player_1407.png" xoff 3 yoff 1 }
+tilefromtexture 1408 { file "ResidentEvil_Data/Actors/Player/Player_1408.png" xoff 1 yoff 1 }
+tilefromtexture 1409 { file "ResidentEvil_Data/Actors/Player/Player_1409.png" yoff 1 }
+
+//Player Fly/JetPack
+
+tilefromtexture 1420 { file "ResidentEvil_Data/Actors/Player/Player_1420.png" xoff 1 yoff 1 }
+tilefromtexture 1421 { file "ResidentEvil_Data/Actors/Player/Player_1421.png" yoff 1 }
+tilefromtexture 1422 { file "ResidentEvil_Data/Actors/Player/Player_1422.png" yoff 1 }
+tilefromtexture 1423 { file "ResidentEvil_Data/Actors/Player/Player_1423.png" yoff 1 }
+tilefromtexture 1424 { file "ResidentEvil_Data/Actors/Player/Player_1424.png" xoff -4 yoff 1 }
+
+//Player Walk Frame 1
+
+tilefromtexture 1425 { file "ResidentEvil_Data/Actors/Player/Player_1425.png" xoff 2 yoff 1 }
+tilefromtexture 1426 { file "ResidentEvil_Data/Actors/Player/Player_1426.png" xoff 3 yoff 1 }
+tilefromtexture 1427 { file "ResidentEvil_Data/Actors/Player/Player_1427.png" yoff 1 }
+tilefromtexture 1428 { file "ResidentEvil_Data/Actors/Player/Player_1428.png" yoff 1 }
+tilefromtexture 1429 { file "ResidentEvil_Data/Actors/Player/Player_1429.png" xoff -3 yoff 1 }
+
+//Player Walk Frame 2
+
+tilefromtexture 1430 { file "ResidentEvil_Data/Actors/Player/Player_1430.png" yoff 1 }
+tilefromtexture 1431 { file "ResidentEvil_Data/Actors/Player/Player_1431.png" xoff 9 yoff 1 }
+tilefromtexture 1432 { file "ResidentEvil_Data/Actors/Player/Player_1432.png" xoff 7 yoff 1 }
+tilefromtexture 1433 { file "ResidentEvil_Data/Actors/Player/Player_1433.png" xoff 1 yoff 1 }
+tilefromtexture 1434 { file "ResidentEvil_Data/Actors/Player/Player_1434.png" xoff -2 yoff 1 }
+
+//Player Walk Frame 3
+
+tilefromtexture 1435 { file "ResidentEvil_Data/Actors/Player/Player_1435.png" yoff 1 }
+tilefromtexture 1436 { file "ResidentEvil_Data/Actors/Player/Player_1436.png" xoff 10 yoff 1 }
+tilefromtexture 1437 { file "ResidentEvil_Data/Actors/Player/Player_1437.png" xoff 3 yoff 1 }
+tilefromtexture 1438 { file "ResidentEvil_Data/Actors/Player/Player_1438.png" xoff -1 yoff 1 }
+tilefromtexture 1439 { file "ResidentEvil_Data/Actors/Player/Player_1439.png" yoff 1 }
+
+//Player Walk Frame 4
+
+tilefromtexture 1440 { file "ResidentEvil_Data/Actors/Player/Player_1440.png" xoff 1 yoff 1 }
+tilefromtexture 1441 { file "ResidentEvil_Data/Actors/Player/Player_1441.png" xoff 12 yoff 1 }
+tilefromtexture 1442 { file "ResidentEvil_Data/Actors/Player/Player_1442.png" xoff 8 yoff 1 }
+tilefromtexture 1443 { file "ResidentEvil_Data/Actors/Player/Player_1443.png" yoff 1 }
+tilefromtexture 1444 { file "ResidentEvil_Data/Actors/Player/Player_1444.png" xoff -2 yoff 1 }
+
+//Player Kick Frame 1
+
+tilefromtexture 1445 { file "ResidentEvil_Data/Actors/Player/Player_1445.png" xoff 4 yoff 1 }
+tilefromtexture 1446 { file "ResidentEvil_Data/Actors/Player/Player_1446.png" xoff 8 yoff 1 }
+tilefromtexture 1447 { file "ResidentEvil_Data/Actors/Player/Player_1447.png" yoff 1 }
+tilefromtexture 1448 { file "ResidentEvil_Data/Actors/Player/Player_1448.png" yoff 1 }
+tilefromtexture 1449 { file "ResidentEvil_Data/Actors/Player/Player_1449.png" xoff -6 yoff 1 }
+
+//Player Kick Frame 2
+
+tilefromtexture 1450 { file "ResidentEvil_Data/Actors/Player/Player_1450.png" xoff 6 yoff 1 }
+tilefromtexture 1451 { file "ResidentEvil_Data/Actors/Player/Player_1451.png" xoff 9 yoff 1 }
+tilefromtexture 1452 { file "ResidentEvil_Data/Actors/Player/Player_1452.png" xoff 13 yoff 1 }
+tilefromtexture 1453 { file "ResidentEvil_Data/Actors/Player/Player_1453.png" yoff 1 }
+tilefromtexture 1454 { file "ResidentEvil_Data/Actors/Player/Player_1454.png" xoff -9 yoff 1 }
+
+//Player Jump
+
+tilefromtexture 1455 { file "ResidentEvil_Data/Actors/Player/Player_1455.png" xoff 1 yoff 1 }
+tilefromtexture 1456 { file "ResidentEvil_Data/Actors/Player/Player_1456.png" xoff 5 yoff 1 }
+tilefromtexture 1457 { file "ResidentEvil_Data/Actors/Player/Player_1457.png" yoff 1 }
+tilefromtexture 1458 { file "ResidentEvil_Data/Actors/Player/Player_1458.png" yoff 1 }
+tilefromtexture 1459 { file "ResidentEvil_Data/Actors/Player/Player_1459.png" yoff 1 }
+
+//Player Crouch/idle
+
+tilefromtexture 1460 { file "ResidentEvil_Data/Actors/Player/Player_1460.png" yoff 1 }
+tilefromtexture 1461 { file "ResidentEvil_Data/Actors/Player/Player_1461.png" xoff 10 yoff -1 }
+tilefromtexture 1462 { file "ResidentEvil_Data/Actors/Player/Player_1462.png" xoff 4 yoff 1 }
+tilefromtexture 1463 { file "ResidentEvil_Data/Actors/Player/Player_1463.png" yoff 1 }
+tilefromtexture 1464 { file "ResidentEvil_Data/Actors/Player/Player_1464.png" yoff 1 }
+
+//Player fall
+
+tilefromtexture 1465 { file "ResidentEvil_Data/Actors/Player/Player_1465.png" xoff 3 yoff 1 }
+tilefromtexture 1466 { file "ResidentEvil_Data/Actors/Player/Player_1466.png" yoff 1 }
+tilefromtexture 1467 { file "ResidentEvil_Data/Actors/Player/Player_1467.png" yoff 1 }
+tilefromtexture 1468 { file "ResidentEvil_Data/Actors/Player/Player_1468.png" yoff 1 }
+tilefromtexture 1469 { file "ResidentEvil_Data/Actors/Player/Player_1469.png" yoff 1 }
+
+//Player Crouch/Move Frame 1
+
+tilefromtexture 1491 { file "ResidentEvil_Data/Actors/Player/Player_1491.png" yoff 1 }
+tilefromtexture 1492 { file "ResidentEvil_Data/Actors/Player/Player_1492.png" yoff 1 }
+tilefromtexture 1493 { file "ResidentEvil_Data/Actors/Player/Player_1493.png" xoff -6 yoff 1 }
+tilefromtexture 1494 { file "ResidentEvil_Data/Actors/Player/Player_1494.png" yoff 1 }
+tilefromtexture 1495 { file "ResidentEvil_Data/Actors/Player/Player_1495.png" yoff 1 }
+
+//Player Crouch/Move Frame 1
+
+tilefromtexture 1496 { file "ResidentEvil_Data/Actors/Player/Player_1496.png" yoff 1 }
+tilefromtexture 1497 { file "ResidentEvil_Data/Actors/Player/Player_1497.png" xoff 5 yoff 1 }
+tilefromtexture 1498 { file "ResidentEvil_Data/Actors/Player/Player_1498.png" yoff 1 }
+tilefromtexture 1499 { file "ResidentEvil_Data/Actors/Player/Player_1499.png" yoff 1 }
+tilefromtexture 1500 { file "ResidentEvil_Data/Actors/Player/Player_1500.png" yoff 1 }
+
+//Player Crouch/Move 1
+
+tilefromtexture 1501 { file "ResidentEvil_Data/Actors/Player/Player_1501.png" yoff 1 }
+tilefromtexture 1502 { file "ResidentEvil_Data/Actors/Player/Player_1502.png" yoff 1 }
+tilefromtexture 1503 { file "ResidentEvil_Data/Actors/Player/Player_1503.png" yoff 1 }
+tilefromtexture 1504 { file "ResidentEvil_Data/Actors/Player/Player_1504.png" yoff 1 }
+tilefromtexture 1505 { file "ResidentEvil_Data/Actors/Player/Player_1505.png" xoff 8 yoff 1 }
+
+//Player Death
+
+tilefromtexture 1511 { file "ResidentEvil_Data/Actors/Player/Player_1511.png" yoff 1 }
+tilefromtexture 1512 { file "ResidentEvil_Data/Actors/Player/Player_1512.png" xoff -2 yoff 33 }
+tilefromtexture 1513 { file "ResidentEvil_Data/Actors/Player/Player_1513.png" xoff 3 yoff 30 }
+tilefromtexture 1514 { file "ResidentEvil_Data/Actors/Player/Player_1514.png" xoff 2 yoff 33 }
+tilefromtexture 1515 { file "ResidentEvil_Data/Actors/Player/Player_1515.png" yoff 29 }
+
+//Player Dead body
+
+tilefromtexture 1518 { file "ResidentEvil_Data/Actors/Player/Player_1518.png" yoff 38 }
+
+//Player Torso jib
+
+tilefromtexture 1520 { file "ResidentEvil_Data/Actors/Player/Player_1520.png" }
+tilefromtexture 1521 { file "ResidentEvil_Data/Actors/Player/Player_1521.png" }
+tilefromtexture 1522 { file "ResidentEvil_Data/Actors/Player/Player_1522.png" }
+tilefromtexture 1523 { file "ResidentEvil_Data/Actors/Player/Player_1523.png" }
+tilefromtexture 1524 { file "ResidentEvil_Data/Actors/Player/Player_1524.png" }
+tilefromtexture 1525 { file "ResidentEvil_Data/Actors/Player/Player_1525.png" }
+tilefromtexture 1526 { file "ResidentEvil_Data/Actors/Player/Player_1526.png" }
+tilefromtexture 1527 { file "ResidentEvil_Data/Actors/Player/Player_1527.png" }
+
+//Player Gun/Arm jib
+
+tilefromtexture 1528 { file "ResidentEvil_Data/Actors/Player/Player_1528.png" }
+tilefromtexture 1529 { file "ResidentEvil_Data/Actors/Player/Player_1529.png" }
+tilefromtexture 1530 { file "ResidentEvil_Data/Actors/Player/Player_1530.png" }
+tilefromtexture 1531 { file "ResidentEvil_Data/Actors/Player/Player_1531.png" }
+tilefromtexture 1532 { file "ResidentEvil_Data/Actors/Player/Player_1532.png" }
+tilefromtexture 1533 { file "ResidentEvil_Data/Actors/Player/Player_1533.png" }
+tilefromtexture 1534 { file "ResidentEvil_Data/Actors/Player/Player_1534.png" }
+tilefromtexture 1535 { file "ResidentEvil_Data/Actors/Player/Player_1535.png" }
+
+//Player Leg jib
+
+tilefromtexture 1536 { file "ResidentEvil_Data/Actors/Player/Player_1536.png" }
+tilefromtexture 1537 { file "ResidentEvil_Data/Actors/Player/Player_1537.png" }
+tilefromtexture 1538 { file "ResidentEvil_Data/Actors/Player/Player_1538.png" }
+tilefromtexture 1539 { file "ResidentEvil_Data/Actors/Player/Player_1539.png" }
+tilefromtexture 1540 { file "ResidentEvil_Data/Actors/Player/Player_1540.png" }
+tilefromtexture 1541 { file "ResidentEvil_Data/Actors/Player/Player_1541.png" }
+tilefromtexture 1542 { file "ResidentEvil_Data/Actors/Player/Player_1542.png" }
+tilefromtexture 1543 { file "ResidentEvil_Data/Actors/Player/Player_1543.png" }
+
+//Player Swimming Frame 1
+
+tilefromtexture 1780 { file "ResidentEvil_Data/Actors/Player/Player_1780.png" yoff 19 }
+tilefromtexture 1781 { file "ResidentEvil_Data/Actors/Player/Player_1781.png" yoff 20 }
+tilefromtexture 1782 { file "ResidentEvil_Data/Actors/Player/Player_1782.png" yoff 20 }
+tilefromtexture 1783 { file "ResidentEvil_Data/Actors/Player/Player_1783.png" yoff 19 }
+tilefromtexture 1784 { file "ResidentEvil_Data/Actors/Player/Player_1784.png" yoff 20 }
+
+//Player Swimming Frame 2
+
+tilefromtexture 1785 { file "ResidentEvil_Data/Actors/Player/Player_1785.png" xoff -1 yoff 19 }
+tilefromtexture 1786 { file "ResidentEvil_Data/Actors/Player/Player_1786.png" yoff 19 }
+tilefromtexture 1787 { file "ResidentEvil_Data/Actors/Player/Player_1787.png" yoff 18 }
+tilefromtexture 1788 { file "ResidentEvil_Data/Actors/Player/Player_1788.png" yoff 19 }
+tilefromtexture 1789 { file "ResidentEvil_Data/Actors/Player/Player_1789.png" xoff 5 yoff 19 }
+
+//Player Swimming Frame 3
+
+tilefromtexture 1790 { file "ResidentEvil_Data/Actors/Player/Player_1790.png" yoff 19 }
+tilefromtexture 1791 { file "ResidentEvil_Data/Actors/Player/Player_1791.png" xoff 15 yoff 18 }
+tilefromtexture 1792 { file "ResidentEvil_Data/Actors/Player/Player_1792.png" xoff 13 yoff 18 }
+tilefromtexture 1793 { file "ResidentEvil_Data/Actors/Player/Player_1793.png" xoff -6 yoff 19 }
+tilefromtexture 1794 { file "ResidentEvil_Data/Actors/Player/Player_1794.png" xoff 3 yoff 19 }
+
+//Player Swimming Frame 4
+
+tilefromtexture 1795 { file "ResidentEvil_Data/Actors/Player/Player_1795.png" xoff 2 yoff 19 }
+tilefromtexture 1796 { file "ResidentEvil_Data/Actors/Player/Player_1796.png" xoff 23 yoff 18 }
+tilefromtexture 1797 { file "ResidentEvil_Data/Actors/Player/Player_1797.png" xoff 24 yoff 18 }
+tilefromtexture 1798 { file "ResidentEvil_Data/Actors/Player/Player_1798.png" xoff 6 yoff 18 }
+tilefromtexture 1799 { file "ResidentEvil_Data/Actors/Player/Player_1799.png" xoff -2 yoff 18 }
+
+
+
+

@@ -9,6 +9,10 @@ include ResidentEvil_Data/Defs/Models.def
 include ResidentEvil_Data/Defs/Menu.def
 
 
+include ResidentEvil_Data/Actors/Player/Player.def
+
+
+
 
 
 include ResidentEvil_Data/Defs/Weapons.def
